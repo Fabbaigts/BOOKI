@@ -11,33 +11,79 @@
 
     <body>
 
-        <header> <!-- en-tête de page avec logo + H1 et menu de navigation -->
-        
-            <div> <!-- Logo cliquable  +  Titre H1 -->
-             
-                <a href="#">
-                    <img src="images\logo\Booki.png" alt="Booki">
-                </a>
-                    <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
-                    <p>en plein centre ville ou en pleine nature</p>
-
+        <header> <!-- en-tête de page avec logo et menu de navigation -->
+            
+            <!-- Logo cliquable   -->
+            <div> 
+                <a href="#"><img src="images\logo\Booki.png" alt="Booki"></a>      
             </div>
 
-            <div> <!-- menu de navigation -->
+            <!-- menu de navigation -->
 
-                <nav>
-                    <ul>
-                        <li><a href="#Hébergements">Hébergements</a></li>
-                        <li><a href="#Activités">Activités</a></li>
-                    </ul>
-                </nav>
+             <nav>
+                <ul>
+                <li><a href="#Hébergements">Hébergements</a></li>
+                <li><a href="#Activités">Activités</a></li>
+                </ul>
+             </nav>
 
-            </div>
         </header>
     
-        <main>
-            <!-- Corps principal de la page -->
+        <main><!-- Corps principal de la page -->
+
+        <!--Titre H1 et slogan -->
+        <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
+        <p>en plein centre ville ou en pleine nature</p>
+            
+            <!--Section de recherche et filtres + résultats -->
+            <section id="section_de_recherche">
+
+                <!--Barre de recherche-->
+                <div class="barre_de_recherche">
+                    <i class="fa-solid fa-location-dot"></i> <!--icône map awesome-->
+                    <input type="text" placeholder="Marseille, France"><!--champ de recherche-->
+                 <button>Rechercher</button><!--Bouton de recherche-->
+                 </div>
+
+                <!--barre de filtres-->
+                <div class="Filtres">
+                    <p>Filtres</p> <!--liste des filtres-->
+                        <div class="Économique">
+                            <i class="fa-solid fa-money-bill-wave"></i> <!--https://fontawesome.com/icons/money-bill-wave?s=solid-->
+                            <p>Économique</p>
+                        </div>
+                        <div class="Familial">
+                            <i class="fa-solid fa-child"></i> <!--https://fontawesome.com/icons/child?s=solid-->
+                            <p>Familial</p>
+                        </div>
+                        <div class="Romantique">
+                            <i class="fa-solid fa-heart"></i> <!--https://fontawesome.com/icons/heart?s=solid-->
+                            <p>Romantique</p>
+                        </div>
+                        <div class="Animaux autorisés">
+                            <i class="fa-solid fa-dog"></i> <!--https://fontawesome.com/icons/dog?s=solid-->
+                            <p>Animaux autorisés</p>
+                        </div>
+                
+                <!--Résultats-->
+                <div class="Résultats_de_recherche"> 
+                    <i class="fa-solid fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+                </div>
+            </section> 
+
+                
+            
+               
+
+
+            </div>
+
+
+            <!-- Section Hébergements-->
             <h2 id="#Hébergements"> Hébergements à Marseille</h2>
+            <!-- section "les plus populaires" -->
             <h2 id="#Activités"> Activités à Marseille</h2>
 
 
