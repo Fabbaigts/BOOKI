@@ -4,7 +4,8 @@
     <!-- Tête de la page -->
         <meta charset="utf-8" />
         <title>Booki home page</title>
-        <link rel="stylesheet" href="css\feuilledestyle.css">
+        <!--<link rel="stylesheet" href="css\feuilledestyle.css"-->
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
      
     </head>
@@ -29,79 +30,188 @@
 
         </header>
     
-        <main><!-- Corps principal de la page -->
 
-        <!--Titre H1 et slogan -->
-        <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
-        <p>en plein centre ville ou en pleine nature</p>
-            
-            <!--Section de recherche et filtres + résultats -->
-            <section id="section_de_recherche">
+        <section id="section_de_recherche">
 
-                <!--Barre de recherche-->
+            <!--Titre H1 et slogan -->
+                <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
+                <p>en plein centre ville ou en pleine nature</p>
+        
+            <!--Barre de recherche-->
                 <div class="barre_de_recherche">
                     <i class="fa-solid fa-location-dot"></i> <!--icône map awesome-->
                     <input type="text" placeholder="Marseille, France"><!--champ de recherche-->
-                 <button>Rechercher</button><!--Bouton de recherche-->
-                 </div>
+                    <button>Rechercher</button><!--Bouton de recherche-->
+                </div>
 
-                <!--barre de filtres-->
+            <!--barre de filtres-->
                 <div class="Filtres">
-                    <p>Filtres</p> <!--liste des filtres-->
-                        <div class="Économique">
-                            <i class="fa-solid fa-money-bill-wave"></i> <!--https://fontawesome.com/icons/money-bill-wave?s=solid-->
-                            <p>Économique</p>
-                        </div>
-                        <div class="Familial">
-                            <i class="fa-solid fa-child"></i> <!--https://fontawesome.com/icons/child?s=solid-->
-                            <p>Familial</p>
-                        </div>
-                        <div class="Romantique">
-                            <i class="fa-solid fa-heart"></i> <!--https://fontawesome.com/icons/heart?s=solid-->
-                            <p>Romantique</p>
-                        </div>
-                        <div class="Animaux autorisés">
-                            <i class="fa-solid fa-dog"></i> <!--https://fontawesome.com/icons/dog?s=solid-->
-                            <p>Animaux autorisés</p>
-                        </div>
-                
-                <!--Résultats-->
-                <div class="Résultats_de_recherche"> 
-                    <i class="fa-solid fa-info"></i>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
-                </div>
-            </section> 
 
+                    <p>Filtres <!--liste des filtres-->
+                    </p>
+
+                    <div class="Économique">
+                        <i class="fa-solid fa-money-bill-wave"></i> <!--https://fontawesome.com/icons/money-bill-wave?s=solid-->
+                        <p>Économique</p>
+                    </div>
+
+                    <div class="Familial">
+                        <i class="fa-solid fa-child"></i> <!--https://fontawesome.com/icons/child?s=solid-->
+                        <p>Familial</p>
+                    </div>
+
+                    <div class="Romantique">
+                        <i class="fa-solid fa-heart"></i> <!--https://fontawesome.com/icons/heart?s=solid-->
+                        <p>Romantique</p>
+                    </div>
+
+                    <div class="Animaux autorisés">
+                        <i class="fa-solid fa-dog"></i> <!--https://fontawesome.com/icons/dog?s=solid-->
+                        <p>Animaux autorisés</p>
+                    </div>
+                    
+                </div>
                 
-            
+            <!--Résultats-->
+
+                    <div class="Résultats_de_recherche"> 
+                        <i class="fa-solid fa-info"></i>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
+                
+        </section> 
+
+        <main> <!-- Corps principal de la page -->
+                
+        <!-- Section Hébergements-->
+            <section class="section2">
+                <H2 id="#Hébergements">Hébergements à Marseille</H2>
+                    <div class="cartes_section1">
+                        <div class="cartes1">
+                            <a href="#"> <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg"></a>
+                            <H3>Auberge La Cannebière</H3>
+                            <p>Nuit à partir de 25€</p>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star grey"></i>
+                        </div>
+
+                        <div class="cartes2">
+                            <a href="#"> <img src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg"></a>
+                            <H3>Hotel du port</H3>
+                            <p>Nuit à partir de 52€</p>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star grey"></i>
+                        </div>
+                        <div class="cartes3">
+                            <a href="#"> <img src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg"></a>
+                            <H3>Hôtel Les mouettes</H3>
+                            <p>Nuit à partir de 76€</p>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star grey"></i>
+                        </div>
+                        <div class="cartes4">
+                            <a href="#"> <img src="images\hebergements\4_small\annie-spratt-Eg1qcIitAuA-unsplash.jpg"></a>
+                            <H3>Hôtel de la mer</H3>
+                            <p>Nuit à partir de 46€</p>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star grey"></i>
+                        </div>
+                        <div class="cartes5">
+                            <a href="#"> <img src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg"></a>
+                            <H3>Auberge Le panier</H3>
+                            <p>Nuit à partir de 23</p>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star grey"></i>
+                        </div>
+                        <div class="cartes6">
+                            <a href="#"> <img src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"></a>
+                            <H3>Hôtel chez Amina</H3>
+                            <p>Nuit à partir de 96€</p>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star blue"></i>
+                            <i class="fas fa-star grey"></i>
+                        </div>
+
+                    </div>
+
+                <p class="afficherplus>">Afficher plus</p>
+
+            </section>
+
+
+
+        
+
+
+
+
+
+
+
+
+        <!-- section "les plus populaires" -->
+            <section class="section3"></section>
+                <h2 id="#populaires">Les plus populaires</h2>
+                <i class="fa-solid fa-child"></i>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- section "les plus populaires" -->
+            <section class="section4">
+                <h2 id="#Activités">Activités à Marseille</h2>
+
+
+
+
+
+
+
                
-
-
-            </div>
-
-
-            <!-- Section Hébergements-->
-            <h2 id="#Hébergements"> Hébergements à Marseille</h2>
-            <!-- section "les plus populaires" -->
-            <h2 id="#Activités"> Activités à Marseille</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </main>
-    </body>
+
+            
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    </body> 
     
       
 
