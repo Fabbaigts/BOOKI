@@ -53,3 +53,14 @@ color: rgb(0, 0, 0);
 }
 
 
+/* Pour les couleurs d'étoiles */
+
+    .fas fa-star blue {
+        color:rgb(39, 142, 226);
+    }
+     
+    .fas fa-star grey {
+        color:grey;
+    }
+     
+   
