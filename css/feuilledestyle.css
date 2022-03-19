@@ -1,66 +1,149 @@
+/* --------------------------------*/
+/* ---------Règles générales-------*/
+/* --------------------------------*/
+
+html{font-family: 'Raleway', sans-serif;
+	}
 
 
-header { 
-	display: flex;
+
+
+
+
+/* ------------------------------------------------------*/
+/* ----------Règles applicables au HEADER ---------------*/
+/* ------------------------------------------------------*/
+header { display: flex;
 	border: 3px solid rgb(255, 0, 0);
 	justify-content: space-between;
-}
+		}
 
-#logo {
+	#logo img {		
+				width: 50%;
+				border: 2px solid rgb(71, 41, 2);
+	}	
+element.style {
+    max-width: 100%;
+}
+  			}
+
+
+	nav
+			{   display: flex;
+			justify-content: space-around;
+			border: 1px solid rgb(19, 224, 29);
+    		
+			}
+	ul {display: flex;
+		justify-content:space-around;
+		border: 1px solid rgb(224, 19, 19);
+		}
+	li {
+		list-style: none;
+		border: 1px solid rgb(224, 118, 19);}
+
+
+
+/*-------------Bloc de SECTION 2 et 3---------------*/
+.Blocsection {display: flex;
 	
-	height:100px;
-	width: 150px;
-	border: 2px solid rgb(71, 41, 2);
-  }
-
-
-nav
-{   display: flex;
-	justify-content: space-between;
-	border: 1px solid rgb(224, 118, 19);
-
-    border: 1px solid black;
-}
-#section_de_recherche {
-	border: 2px solid rgb(255, 1, 1);
-}
-
-
-
-body {
-	line-height: 1;
-}
-
-
-
-
-.conteneurfiltres { display: flex;
-
-			width: 1000;
-			height:50px;
-			display: flex;
-			justify-content: left;
-			align-items: center;
-}
-.elementszonefiltres {
-	display: flex;
-
-	color: red;
+	
+	border: solid #ff0000 3px;
 	
 }
-.h3filtre {
-color: rgb(0, 0, 0);
-}
 
 
-/* Pour les couleurs d'étoiles */
+	/* SECTION 2 Hébergements à marseille */
 
-    .fas fa-star blue {
-        color:rgb(39, 142, 226);
-    }
-     
-    .fas fa-star grey {
-        color:grey;
-    }
+
+	.section2{display: flex;
+		flex-direction:column;
+		justify-content:start;
+		border: solid #ff0000 3px;
+		
+	}
+	.conteneur_des_cartes_S2 {display: flex;
+		border: solid #4400ff 3px;
+				flex-wrap: wrap;
+				justify-content: start;
+				justify-content:space-around;
+				align-items: space-between;
+				}
+	
+
+	  .cartesS2{
+		border: solid #4400ff 3px;
+		justify-content: space-around;
+		height:300px;
+		width:150px;
+		font-size:1.1rem;
+		border-radius:2rem;
+		box-shadow:3px 3px 10px 
+		
+	  }
+		
+	  
+	  
+	  .conteneur_img{
+		width:100%;
+		height:auto;
+	  }
+	  
+	  .image_de_la_carte{
+		width:100%;
+		height:100%;
+		border-radius:2rem 2em 0 0;
+		object-fit:cover;
+	  }
+	  
+	  .conteneur_text{
+		padding-left:1rem;
+	  }
+	  
+	  
+	  
+	  .card:hover{
+		cursor:pointer;
+		box-shadow:5px 5px 10px gray;
+		transform:translateY(-5px);
+	  }
+	  
+	  .fas:not(:last-child){
+		color:#0065FC;
+	  }
+	
+
+	
+	.étoiles 
+	{
+
+
+	}
+
+
+
+
+
+	/* SECTION 3 LES PLUS POPULAIRES */
+
+	.section3 {display: flex;
+		flex-direction: column;
+			
+
+	}
+
+
+	.Titrepopulaires { display :flex;
+
+		border: 2px solid rgb(255, 1, 1);
+		align-items: center ;
+	}
+
+	.fa-star {style="color:rgb(0, 119, 255)}
+	.fa-star grey {style="color:rgb(0, 19, 255)}
+
+	
+
+
      
    
