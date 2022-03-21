@@ -98,8 +98,8 @@ header { display: flex;
 .barre_de_recherche
 {
 display: inline-block;
-
-border: solid #b4a912 3px;
+border: solid #d8d8d8 1px;
+border-radius: 20px;
 
 }
 
@@ -109,7 +109,9 @@ border: solid #b4a912 3px;
 		padding: 12px;
 		height: 18px;
 		border-radius: 20px 0px 0px 20px;
-		background-color: rgba(233, 233, 233, 0.638);
+		background-color: rgba(162, 144, 144, 0.638);
+		border: 0;
+
 		
 	}
 	
@@ -119,15 +121,18 @@ border: solid #b4a912 3px;
 		font-weight: 700;
 		padding-left: 10px;
 		padding-bottom: 0px;
+		padding-top: 0px;
 		
 	}
 
 	button
 	{display :inline-block;
 		height: 40px;
-		border-style: none;
+		border-color: rgba(233, 233, 233, 0.638);
 		padding-right: 15px;
 		padding-left: 15px;
+		padding-top: 0px;
+		padding-bottom: 0px;
 		background-color: #76b2ff;
 		border-top-right-radius: 20px;
 		border-bottom-right-radius: 20px;
