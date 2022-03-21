@@ -92,7 +92,7 @@ header { display: flex;
 				font-style : color blue;
 				}
 
-/*-------------Bloc de SECTION 1 de recherche---------------*/
+/*-------------Bloc de SECTION 1 "recherche" + FILTRES ---------------*/
 
 
 .barre_de_recherche
@@ -111,12 +111,11 @@ align-items: center;
 		background-color: rgb(236, 236, 236);
 
 		width: 34px;
-		height: 25px;
+		height: 24px;
 		border-radius:50%;
 		padding-top: 9px;
 		text-align:center;
-		vertical-align: text-bottom;
-		margin: 10px;
+		margin: 11px;
 		font-size: 14px;
 
 	}
@@ -142,8 +141,111 @@ align-items: center;
 
 	}
 
+	/*-------------GLOBAL DE LA BARRE DE FILTRES---------------*/
+
+	.elementszonefiltres 
+	{
+		display: flex;
+		flex-direction:row;
+		justify-content:flex-start;
+		
+		border: solid #ff0000 3px;
+	}
+		/*-------------ELEMENTS DE LA BARRE DE FILTRE---------------*/
+
+		.h3filtre {
+			display flex;
+			border: solid #b4a912 3px;
+			flex-direction: flex-start;
+			margin-left:10px;
+			margin-right:10px;
 
 
+		}
+		.Economique 
+		{
+			display:flex;
+			
+			align-items: center;
+			margin-right: 20px;
+			padding:0;
+			border: solid #4400ff 3px;
+			border;
+
+		}
+
+		.Familial 
+		{
+			display:flex;
+			justify-content:center;
+			align-items: center;
+			
+			border: solid #4400ff 3px;
+		}
+
+		.Romantique
+		{
+			display:flex;
+			justify-content:center;
+			align-items: center;
+			margin-right: 20px;
+			border: solid #4400ff 3px;
+		}
+		
+		.Animauxfiltre
+		{
+			display:flex;
+			justify-content:center;
+			align-items: center;
+			border: solid #4400ff 3px;
+		}
+
+		/*-------------ICONES FA---------------*/
+		.fa-money-bill-wave
+		{
+			background-color: rgba(174, 223, 252, 0.515);
+			width: 34px;
+			height: 24px;
+			border-radius:50%;
+			padding-top: 11px;
+			text-align:center;
+			font-size: 14px;
+		}
+
+		.fa-child
+		{
+			background-color: rgba(174, 223, 252, 0.515);
+			width: 34px;
+			height: 24px;
+			border-radius:50%;
+			padding-top: 11px;
+			text-align:center;
+			font-size: 14px;
+		}
+
+		.fa-heart
+		{
+			background-color: rgba(174, 223, 252, 0.515);
+			width: 34px;
+			height: 24px;
+			border-radius:50%;
+			padding-top: 11px;
+			text-align:center;
+			font-size: 14px;
+		}
+
+		.fa-dog
+		{
+			background-color: rgba(174, 223, 252, 0.515);
+			width: 34px;
+			height: 24px;
+			border-radius:50%;
+			padding-top: 11px;
+			text-align:center;
+			font-size: 14px;
+		}
+
+	/*-------------RESULTATS DE RECHERCHE---------------*/
 
 
 
