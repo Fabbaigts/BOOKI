@@ -97,36 +97,28 @@ header { display: flex;
 
 .barre_de_recherche
 {
-display: flex;
+display: inline-block;
 
-align-items: center;
-
+border: solid #b4a912 3px;
 
 }
 
-	.fa-location-dot 
-	{
-		
-		
-		background-color: rgb(236, 236, 236);
 
-		width: 34px;
-		height: 24px;
-		border-radius:50%;
-		padding-top: 9px;
-		text-align:center;
-		margin: 11px;
-		font-size: 14px;
-
+	.fa-location-dot {
+		display: inline-block;
+		padding: 12px;
+		height: 18px;
+		border-radius: 15px 0px 0px 15px;
+		background-color: rgba(233, 233, 233, 0.638);
+		
 	}
+	
 
-	input {display :flex;
-		height: 34px;
-
+	input {display :inline-block;
+		height: 40px;
 		font-weight: 700;
 		padding-left: 10px;
-		margin-right: 2px;
-		align-items: center;
+		padding-bottom: 0px;
 		
 	}
 
@@ -147,25 +139,28 @@ align-items: center;
 	{
 		display: flex;
 		flex-direction:row;
-		justify-content:flex-start;
+		align-content:flex-start;
+		height: 40px;
+
 		
 		border: solid #ff0000 3px;
 	}
 		/*-------------ELEMENTS DE LA BARRE DE FILTRE---------------*/
 
 		.h3filtre {
-			display flex;
-			border: solid #b4a912 3px;
-			flex-direction: flex-start;
-			margin-left:10px;
-			margin-right:10px;
-
+			
+				display: block;
+				font-size: 1.17em;
+				margin-block-start: -16px;
+				margin-inline-start: 10px;
+				margin-inline-end: 10px;
+				font-weight: bold
 
 		}
 		.Economique 
 		{
 			display:flex;
-			
+			flex-wrap: wrap;
 			align-items: center;
 			margin-right: 20px;
 			padding:0;
@@ -179,7 +174,7 @@ align-items: center;
 			display:flex;
 			justify-content:center;
 			align-items: center;
-			
+			margin-right: 20px;
 			border: solid #4400ff 3px;
 		}
 
