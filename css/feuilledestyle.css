@@ -2,7 +2,144 @@
 /* ---------Règles générales-------*/
 /* --------------------------------*/
 
-html{font-family: 'Raleway', sans-serif;
+html
+	{
+	font-family: 'Raleway', sans-serif;
+	}
+
+h1 { 
+	font-size: 20px;
+	}
+
+p {
+	font-size:14px;
+	}
+
+/* ------------------------------------------------------*/
+/* ----------Règles applicables au HEADER ---------------*/
+/* ------------------------------------------------------*/
+header { display: flex;
+	
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	
+
+	
+		}
+
+	.bloclogo 
+	{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	}
+
+		#logo img 
+		{		
+		justify-content: center;
+		width: 60%;
+		
+		}	
+	
+
+
+	nav
+		{   
+		display: flex;
+		align-items: center;
+		height: 100%;
+		width: auto;
+		justify-content:center;
+		}
+
+		ul
+		{
+		display: flex;
+		align-items: center;
+		padding-left: 0px;
+		height: 100%
+	
+		}
+
+		a:link 
+		{ 
+ 		text-decoration:none; 
+		color : black;
+		} 
+
+		a:hover 
+		{
+		color : blue;
+
+		}
+
+				li 
+				{
+				display: flex;
+				border: 3px solid transparent;
+				height: 95%;
+				align-items: center;
+				width: auto;
+				margin: 10px;						
+				}	
+
+				li:hover 
+				{ 
+				display: flex;
+				border-top: 3px solid rgb(11, 137, 255);
+				font-style : color blue;
+				}
+
+/*-------------Bloc de SECTION 1 de recherche---------------*/
+
+
+.barre_de_recherche
+{
+display: flex;
+
+align-items: center;
+
+
+}
+
+	.fa-location-dot 
+	{
+		
+		
+		background-color: rgb(236, 236, 236);
+
+		width: 34px;
+		height: 25px;
+		border-radius:50%;
+		padding-top: 9px;
+		text-align:center;
+		vertical-align: text-bottom;
+		margin: 10px;
+		font-size: 14px;
+
+	}
+
+	input {display :flex;
+		height: 34px;
+
+		font-weight: 700;
+		padding-left: 10px;
+		margin-right: 2px;
+		align-items: center;
+		
+	}
+
+	button
+	{
+		height: 40px;
+		border-style: none;
+		background-color: #76b2ff;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+
+
 	}
 
 
@@ -10,47 +147,16 @@ html{font-family: 'Raleway', sans-serif;
 
 
 
-/* ------------------------------------------------------*/
-/* ----------Règles applicables au HEADER ---------------*/
-/* ------------------------------------------------------*/
-header { display: flex;
-	border: 3px solid rgb(255, 0, 0);
-	justify-content: space-between;
-		}
-
-	#logo img {		
-				width: 50%;
-				border: 2px solid rgb(71, 41, 2);
-	}	
-element.style {
-    max-width: 100%;
-}
-  			}
-
-
-	nav
-			{   display: flex;
-			justify-content: space-around;
-			border: 1px solid rgb(19, 224, 29);
-    		
-			}
-	ul {display: flex;
-		justify-content:space-around;
-		border: 1px solid rgb(224, 19, 19);
-		}
-	li {
-		list-style: none;
-		border: 1px solid rgb(224, 118, 19);}
-
-
 
 /*-------------Bloc de SECTION 2 et 3---------------*/
 .Blocsection {display: flex;
 	
-	
 	border: solid #ff0000 3px;
-	
+
 }
+	
+	
+
 
 
 	/* SECTION 2 Hébergements à marseille */
@@ -60,10 +166,13 @@ element.style {
 		flex-direction:column;
 		justify-content:start;
 		border: solid #ff0000 3px;
+		background-color: rgb(112, 64, 0);
 		
 	}
 	.conteneur_des_cartes_S2 {display: flex;
+		background-color: rgb(235, 235, 235);
 		border: solid #4400ff 3px;
+		border-radius: 10px;
 				flex-wrap: wrap;
 				justify-content: start;
 				justify-content:space-around;
@@ -73,6 +182,7 @@ element.style {
 
 	  .cartesS2{
 		border: solid #4400ff 3px;
+		background-color: rgb(255, 255, 255);
 		justify-content: space-around;
 		height:300px;
 		width:150px;
@@ -85,10 +195,11 @@ element.style {
 	  
 	  
 	  .conteneur_img{
-		width:100%;
+		width:auto;
 		height:auto;
-	  }
-	  
+		margin: 2%;
+	
+	  }	  
 	  .image_de_la_carte{
 		width:100%;
 		height:100%;
@@ -111,8 +222,58 @@ element.style {
 	  .fas:not(:last-child){
 		color:#0065FC;
 	  }
+
+
+	  .conteneur_des_cartes_S3 {display: flex;
+		border: solid #4400ff 3px;
+				flex-wrap: wrap;
+				justify-content: start;
+				justify-content:space-around;
+				align-items: space-between;
+				}
 	
 
+				.cartesS3 {
+					border: solid #4400ff 3px;
+					justify-content: space-around;
+					height:300px;
+					width:150px;
+					font-size:1.1rem;
+					border-radius:2rem;
+					box-shadow:3px 3px 10px 
+					
+				  }
+					
+				  
+				  
+				  .conteneur_img3{
+					width:100%;
+					
+					height:auto;
+				  }
+				  
+				  .image_de_la_carte3{
+					width:100%;
+					height:100%;
+					border-radius:2rem 2em 0 0;
+					object-fit:cover;
+				  }
+				  
+				  .conteneur_text{
+					padding-left:1rem;
+				  }
+				  
+				  
+				  
+				  .card:hover{
+					cursor:pointer;
+					box-shadow:5px 5px 10px gray;
+					transform:translateY(-5px);
+				  }
+				  
+				  .fas:not(:last-child){
+					color:#0065FC;
+				  }
 	
 	.étoiles 
 	{
