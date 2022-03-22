@@ -1,10 +1,23 @@
 /* --------------------------------*/
 /* ---------Règles générales-------*/
 /* --------------------------------*/
+@media (min-width: 992px) 
+{
+
+		
+	}
 
 html
 	{
 	font-family: 'Raleway', sans-serif;
+
+	}
+body 
+	{
+	width:100%;
+	margin:auto;
+	min-width:992;
+	max-width:2000px
 	}
 
 h1 { 
@@ -14,6 +27,9 @@ h1 {
 p {
 	font-size:14px;
 	}
+.bleu {color: #0065FC;}
+.bleuclair {color: #DEEBFF;}
+.gris {color: #f2f2f2;}
 
 /* ------------------------------------------------------*/
 /* ----------Règles applicables au HEADER ---------------*/
@@ -71,7 +87,7 @@ header { display: flex;
 
 		a:hover 
 		{
-		color : blue;
+		color :#0065FC
 
 		}
 
@@ -88,8 +104,8 @@ header { display: flex;
 				li:hover 
 				{ 
 				display: flex;
-				border-top: 3px solid rgb(11, 137, 255);
-				font-style : color blue;
+				border-top: 3px solid #0065FC;
+				 
 				}
 
 /*-------------Bloc de SECTION 1 de recherche---------------*/
@@ -239,15 +255,18 @@ border: solid #00c3ff 3px;
 
 	/* SECTION 2 Hébergements à marseille */
 
-
+	#Hébergements {
+		margin-left: 20px;
+	}
 	.section2
 	{
 	display: flex;
 	flex-direction:column;
 	justify-content:center;
 	border: solid #ff0000 3px;
-	background-color: rgba(255, 255, 255, 0.782);
-		
+	background-color: rgb(209, 209, 209);
+	padding: 10px;
+	border-radius: 20px;
 		}
 		.conteneur_des_cartes_S2 
 		{
@@ -255,9 +274,7 @@ border: solid #00c3ff 3px;
 		flex-direction: column;
 		justify-content: center;
 		margin: 10px;
-		background-color: rgb(209, 209, 209);
-	
-		border-radius: 20px;
+		
 					
 		}
 
@@ -280,7 +297,7 @@ border: solid #00c3ff 3px;
 				flex-direction: column;
 				border: solid #4400ff 3px;
 				background-color: rgb(255, 255, 255);
-				justify-content: space-around;
+				margin: 10px 10px 10px 10px;
 				min-height:200px;
 				min-width:100px;
 				font-size: 60%;
@@ -309,7 +326,7 @@ border: solid #00c3ff 3px;
 					
 					.conteneur_text
 					{
-						padding-left:1rem;
+						padding-left:5px
 					}
 
 					.fa-star{
