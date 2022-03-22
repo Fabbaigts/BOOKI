@@ -150,9 +150,9 @@ border-radius: 10px 10px 10px 10px;
 	.zonefiltres 
 	{
 	display: flex;
-	width: 1000px;
-	justify-content: space-around;
+	flex-wrap: wrap;
 	margin-top: 30px;
+	margin-left: 10px;
 
 
 	
@@ -161,37 +161,66 @@ border-radius: 10px 10px 10px 10px;
 
 
 		h3{
-		display: inline-flex;
-		padding-left: 10px;
-		padding-right: 10px;
+		display:flex;
+		margin-right: 10px;
+		margin-top: 6px;
 		}
 
-		.boutondetri
+		.boutondetri /* cible le bouton dans son intégralité */
 		{
-		display:flex;
-			justify-content: space-between;
+			display:flex;
 			align-items: center;
-			border: solid #a7a7a7 1px;
-			height:20;
-			background-color: rgba(236, 236, 236, 0.226);
-			padding-left: ;
-			padding-bottom: 0px;
-			padding-right: 20px;
-			border-radius: 40px ;
+			border: solid #ebe8e8 1px;
+			height:30px;
+			background-color: rgba(255, 255, 255, 0.226);
+			border-radius: 16px ;
+			padding-bottom: 3px;
+			padding-top: 2px;
+			padding-right: 10px;
+			margin-right: 10px;
+			font-weight: 700;
 		
 		}
-
-		.boutondetri i {
+		
+		.boutondetri i /* cible l'icône */
+		{ 
+			display: flex;
 			background-color: #55bbff7e;
-			padding: 20px;
+			padding: 10px;
+			
+			margin-top: 2px;
+			margin-right: 10px;
+			margin-left: -1px; /* alignement sur le trait de contour */
 			border-radius: 50%;
+			
 		}
-		.
+		.boutondetri i:hover/* cible l'icône */
+		{ 
+			display: flex;
+			background-color: #2d88f0;
+			color : rgb(255, 255, 255);
+			padding: 10px;
+			margin-top: 2px;
+			margin-right: 10px;
+			margin-left: -1px; /* alignement sur le trait de contour */
+			border-radius: 50%;
+			
+		}
 
 		.Résultats_de_recherche 
 		{
-		display: flex;
+		display: inline-flex;
+			align-items: center;
+			margin-left:10px ;
 
+
+			
+		}
+		.fa-info {
+			margin :  10px;
+			background-color: #8d848450;
+			padding: 10px 15px 10px 15px;
+			border-radius: 50%;
 		}
 
 
@@ -213,29 +242,44 @@ border: solid #ff0000 3px;
 
 	.section2{display: flex;
 		flex-direction:column;
-		justify-content:start;
+		justify-content:center;
 		border: solid #ff0000 3px;
 		background-color: rgba(158, 158, 158, 0.535);
 		
 	}
-	.conteneur_des_cartes_S2 {display: flex;
-		background-color: rgb(235, 235, 235);
-		border: solid #4400ff 3px;
-		border-radius: 10px;
-				flex-wrap: wrap;
-				justify-content: start;
-				justify-content:space-around;
-				align-items: space-between;
-				}
+	.conteneur_des_cartes_S2 
+	{
+	display: flex;
+	flex-direction: column;
+	
+	margin: 10px;
 	
 
-	  .cartesS2{
+	background-color: rgb(82, 12, 162);
+		border: solid #748a78 3px;
+		border-radius: 20px;
+				
+				}
+
+
+	.S2L1 { display : flex;
+		
+
+	
+	}
+	.S2L2 { display : flex;
+		
+	
+	}
+
+	  .cartesS2{display:flex;
+		flex-direction: column;
 		border: solid #4400ff 3px;
 		background-color: rgb(255, 255, 255);
 		justify-content: space-around;
 		height:300px;
 		width:150px;
-		font-size:1.1rem;
+		font-size: 50%;
 		border-radius:2rem;
 		box-shadow:3px 3px 10px 
 		
@@ -243,7 +287,7 @@ border: solid #ff0000 3px;
 		
 	  
 	  
-	  .conteneur_img{
+	  .conteneur_img{ display: flex;
 		width:auto;
 		height:auto;
 		margin: 2%;
@@ -273,33 +317,33 @@ border: solid #ff0000 3px;
 	  }
 
 
-	  .conteneur_des_cartes_S3 {display: flex;
-		border: solid #4400ff 3px;
-				flex-wrap: wrap;
-				justify-content: start;
-				justify-content:space-around;
-				align-items: space-between;
-				}
+	.conteneur_cartes_S3 
+	{
+	display: flex;
+	border: solid #4400ff 3px;
+	flex-direction: column;		
+							
+	}
 	
 
-				.cartesS3 {
+				.cartesS3 { display: flex;
+					
 					border: solid #4400ff 3px;
 					justify-content: space-around;
-					height:300px;
-					width:150px;
+					width: 300px;
+					height: 150px;
 					font-size:1.1rem;
 					border-radius:2rem;
-					box-shadow:3px 3px 10px 
-					
+					box-shadow:3px 3px 10px ;
+					font-size: 70%;
 				  }
 					
 				  
 				  
-				  .conteneur_img3{
-					width:100%;
-					
+				  .conteneur_img3{ display: flex;
+					max-width:100px;
 					height:auto;
-				  }
+					margin: 2%;}
 				  
 				  .image_de_la_carte3{
 					width:100%;
@@ -308,8 +352,11 @@ border: solid #ff0000 3px;
 					object-fit:cover;
 				  }
 				  
-				  .conteneur_text{
-					padding-left:1rem;
+				  .conteneur_text{display:flex;
+					flex-direction: column;
+					width: auto;
+					border: solid #4400ff 3px;
+					;
 				  }
 				  
 				  
