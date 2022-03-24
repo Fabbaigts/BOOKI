@@ -25,315 +25,336 @@
     </head>
 
     <body>
+        <div id="bloc_page">
+            <header> <!-- en-tête de page avec logo et menu de navigation -->
+                
+                <!-- Logo cliquable   -->
+                <div id="logo"> 
+                    <a href="#"><img class="bloclogo" src="images/logo/Booki.png" alt="Booki"></a>      
+                </div>
 
-        <header> <!-- en-tête de page avec logo et menu de navigation -->
+                <!-- menu de navigation -->
+                <nav>
+                    <ul>
+                    <li><a href="#Hébergements">Hébergements</a></li>
+                    <li><a href="#Activités">Activités</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+
+
+
+            <main> <!--xxxxxxxxxxxx Corps principal de la page xxxxxxxxxxxxxx-->
+
+                <section class="section_de_recherche">
+
+                    <!--Titre H1 et slogan -->
+                        <H1> Trouvez votre hébergement pour des vacances de rêve </H1>
+                        <p>En plein centre ville ou en pleine nature</p>
             
-            <!-- Logo cliquable   -->
-            <div id="logo"> 
-                <a href="#"><img class="bloclogo" src="images/logo/Booki.png" alt="Booki"></a>      
-            </div>
-
-            <!-- menu de navigation -->
-             <nav>
-                <ul>
-                <li><a href="#Hébergements">Hébergements</a></li>
-                <li><a href="#Activités">Activités</a></li>
-                </ul>
-             </nav>
-
-        </header>
-
-
-
-        <main> <!--xxxxxxxxxxxx Corps principal de la page xxxxxxxxxxxxxx-->
-
-            <section class="section_de_recherche">
-
-                <!--Titre H1 et slogan -->
-                    <H1> Trouvez votre hébergement pour des vacances de rêve </H1>
-                    <p>En plein centre ville ou en pleine nature</p>
-         
-                <!--Barre de recherche-->
-                <div class="barre_de_recherche">
-                    
-                    <i class="fa-solid fa-location-dot"></i> <!--icône map awesome-->
-                    <input type="text" placeholder="Marseille, France"> <!--champ de recherche-->
-                    <button><span class="recherche">Rechercher</span></button><!--Bouton de recherche-->
-                </div>
-
-                <!--barre de filtres-->
-                     
-                <div class="zonefiltres">
-
-                    <!--liste des filtres-->  <!--Hésitation entre Blocs et Liste de Blocs-->
-                     <div class="h3filtre">
-                         <h3>Filtres</h3> 
-                     </div>  
-
-                     <div class="boutondetri">
-                         <i class="fa-solid fa-money-bill-wave"></i> <!--https://fontawesome.com/icons/money-bill-wave?s=solid-->
-                         <p class ="economique">Économique</p>
-                     </div>
-
-                     <div class="boutondetri">
-                         <i class="fa-solid fa-child"></i> <!--https://fontawesome.com/icons/child?s=solid-->
-                         <p class ="familial">Familiale</p>
-                     </div>
-
-                     <div class="boutondetri">
-                         <i class="fa-solid fa-heart"></i> <!--https://fontawesome.com/icons/heart?s=solid-->
-                         <p class ="romantique">Romantique</p>
-                     </div>
-
-                     <div class="boutondetri">
-                         <i class="fa-solid fa-dog"></i> <!--https://fontawesome.com/icons/dog?s=solid-->
-                         <p class ="animaux">Animaux autorisés</p>
-                     </div>
-                   
-                </div>
-                 <!--Résultat informatif-->
-
-                 <div class="Résultats_de_recherche"> 
-                    <i class="fa-solid fa-info"></i>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
-
-            </section> 
-            
-
-        
-
-
-            <!-- Bloc de Section 2 et 3  -->
-
-            <div class="Blocsection">
-                <!-- Section 2 Hébergements à Marseille -->
-
-                <div class="section2">
-
-                    <H2 id="Hébergements">Hébergements à Marseille</H2>
+                    <!--Barre de recherche-->
+                    <div class="barre_de_recherche">
                         
-                        <div class="conteneur_des_cartes_S2">
-                            
+                        <i class="fa-solid fa-location-dot"></i> <!--icône map awesome-->
+                        <form > 
+                            <input type="search" name="champ_recherche" id="recherche_lieu" placeholder="Marseille, France"> <!--champ de recherche-->
+                        </form>
+                        <button><span class="recherche">Rechercher</span></button><!--Bouton de recherche-->
+                    </div>
 
-                            <div class="S2L1">
-                                <div class="cartesS2">
-                                    <div class="conteneur_img">
-                                        <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
-                                    </div>
+                    <!--barre de filtres-->
+                        
+                    <div class="zonefiltres">
 
-                                    <div class="conteneur_text">
+                        <!--liste des filtres-->  <!--Hésitation entre Blocs et Liste de Blocs-->
+                        <div class="h3filtre">
+                            <h3>Filtres</h3> 
+                        </div>  
 
-                                        <H3>Auberge La Cannebière</H3>
-                                        <p>Nuit à partir de </p><span>25€</span>
-
-                                        <div class="étoiles">
-                                            <i class="fas fa-star" ></i>
-                                            <i class="fas fa-star" ></i>
-                                            <i class="fas fa-star" ></i>
-                                            <i class="fas fa-star" ></i>
-                                            <i class="fas fa-star" ></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="cartesS2">
-                                    <div class="conteneur_img">
-                                        <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
-                                    </div>
-
-                                    <div class="conteneur_text">
-
-                                        <H3>Auberge La Cannebière</H3>
-                                        <p>Nuit à partir de </p><span>25€</span>
-
-                                        <div class="étoiles">
-                                            <i class="fas fa-star" ></i>
-                                            <i class="fas fa-star" ></i>
-                                            <i class="fas fa-star" ></i>
-                                            <i class="fas fa-star" ></i>
-                                            <i class="fas fa-star" ></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="cartesS2">
-                                    <div class="conteneur_img">
-                                        <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
-                                    </div>
-
-                                    <div class="conteneur_text">
-
-                                        <H3>Auberge La Cannebière</H3>
-                                        <p>Nuit à partir de </p><span>25€</span>
-
-                                        <div class="étoiles">
-                                            <i class="fas fa-star" ></i>
-                                            <i class="fas fa-star" ></i>
-                                            <i class="fas fa-star" ></i>
-                                            <i class="fas fa-star" ></i>
-                                            <i class="fas fa-star" ></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="S2L2">
-                             <div class="cartesS2">
-                                <div class="conteneur_img">
-                                    <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
-                                </div>
-
-                                <div class="conteneur_text">
-
-                                    <H3>Auberge La Cannebière</H3>
-                                    <p>Nuit à partir de </p><span>25€</span>
-
-                                    <div class="étoiles">
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                    </div>
-                                </div>
-                            </div>
-                            
-
-                            
-                            <div class="cartesS2">
-                                <div class="conteneur_img">
-                                    <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
-                                </div>
-
-                                <div class="conteneur_text">
-
-                                    <H3>Auberge La Cannebière</H3>
-                                    <p>Nuit à partir de </p><span>25€</span>
-
-                                    <div class="étoiles">
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            
-                            <div class="cartesS2">
-                                <div class="conteneur_img">
-                                    <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
-                                </div>
-
-                                <div class="conteneur_text">
-
-                                    <H3>Auberge La Cannebière</H3>
-                                    <p>Nuit à partir de </p><span>25€</span>
-
-                                    <div class="étoiles">
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="boutondetri">
+                            <i class="fa-solid fa-money-bill-wave"></i> <!--https://fontawesome.com/icons/money-bill-wave?s=solid-->
+                            <p class ="economique">Économique</p>
                         </div>
-                            
 
-                        </div><!--fin de div Conteneur de cartes S2-->
+                        <div class="boutondetri">
+                            <i class="fa-solid fa-child"></i> <!--https://fontawesome.com/icons/child?s=solid-->
+                            <p class ="familial">Familiale</p>
+                        </div>
 
-                    <p class="afficherplus">Afficher plus</p>
+                        <div class="boutondetri">
+                            <i class="fa-solid fa-heart"></i> <!--https://fontawesome.com/icons/heart?s=solid-->
+                            <p class ="romantique">Romantique</p>
+                        </div>
 
-                </div> <!--fin de div section 2 -->
+                        <div class="boutondetri">
+                            <i class="fa-solid fa-dog"></i> <!--https://fontawesome.com/icons/dog?s=solid-->
+                            <p class ="animaux">Animaux autorisés</p>
+                        </div>
+                    
+                    </div>
+                    <!--Résultat informatif-->
+
+                    <div class="Résultats_de_recherche"> 
+                        <i class="fa-solid fa-info"></i>
+                        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    </div>
+
+                </section> 
+                
+
             
 
 
-                <!-- section 3 "les plus populaires" -->
+                
 
-                <aside class="section3">
+                <div class="conteneur_S2_S3">
 
-                    <div class="Titrepopulaires">
+                    <div class="section2">
+
+                        <H2 id="Hébergements">Hébergements à Marseille</H2>
+                     
+                 
+                    
+                        <div class="conteneur_des_cartes_S2">
+                                    
+
+                            <div class="cartesS2">
+                                <div class="conteneur_img">
+                                    <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
+                                </div>
+
+                                <div class="conteneur_text_s2">
+
+                                    <H3>Auberge La Cannebière</H3>
+                                    <p>Nuit à partir de <span>25€</span></p>
+
+                                    <div class="étoiles">
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="cartesS2">
+                                <div class="conteneur_img">
+                                    <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
+                                </div>
+
+                                <div class="conteneur_text_s2">
+
+                                    <H3>Auberge La Cannebière</H3>
+                                    <p>Nuit à partir de <span>25€</span></p>
+
+                                    <div class="étoiles">
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="cartesS2">
+                                <div class="conteneur_img">
+                                    <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
+                                </div>
+
+                                <div class="conteneur_text_s2">
+
+                                    <H3>Auberge La Cannebière</H3>
+                                    <p>Nuit à partir de <span>25€</span></p>
+
+                                    <div class="étoiles">
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="cartesS2">
+                                <div class="conteneur_img">
+                                    <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
+                                </div>
+
+                                <div class="conteneur_text_s2">
+
+                                    <H3>Auberge La Cannebière</H3>
+                                    <p>Nuit à partir de <span>25€</span></p>
+
+                                    <div class="étoiles">
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="cartesS2">
+                                <div class="conteneur_img">
+                                    <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
+                                </div>
+
+                                <div class="conteneur_text_s2">
+
+                                    <H3>Auberge La Cannebière</H3>
+                                    <p>Nuit à partir de <span>25€</span></p>
+
+                                    <div class="étoiles">
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="cartesS2">
+                                <div class="conteneur_img">
+                                    <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
+                                </div>
+
+                                <div class="conteneur_text_s2">
+
+                                    <H3>Auberge La Cannebière</H3>
+                                    <p>Nuit à partir de <span>25€</span></p>
+
+                                    <div class="étoiles">
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                        <i class="fas fa-star" ></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            
+                            
+                        </div> <!-- fin bloc conteneur des cards -->   
+
+                        <p class="afficherplus">Afficher plus</p>
+                    
+                    </div>
+                    
+
+
+                    
+
+                    <div class="section3"> <!-- section 3 "les plus populaires" -->   
+
+                        <div class="Titrepopulaires">
                             <H2 id="#populaires">Les plus populaires</H2>
 
                             <i class="fa-solid fa-chart-line-up"></i> <!--ne s'affiche pas (v6.0)-->
                             <i class="fa-solid fa-chart-line"></i>
-                    </div>  
+                        </div>  
 
-                    <div class="conteneur_cartes_S3">
 
-                        <div class="cartesS3">
-                            <div class="conteneur_img3">
-                                <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
-                            </div>
+                        <div class="conteneur_cartes_S3">
 
-                            <div class="conteneur_text">
+                            <a href="#"> <!--lien vers la page de l'hébergement-->
 
-                                <H3>Auberge La Cannebière</H3>
-                                <p>Nuit à partir de </p><span>25€</span>
-
-                                <div class="étoiles">
-                                    <i class="fas fa-star" ></i>
-                                    <i class="fas fa-star" ></i>
-                                    <i class="fas fa-star" ></i>
-                                    <i class="fas fa-star" ></i>
-                                    <i class="fas fa-star" ></i>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        <div class="cartesS3">
-                            <div class="conteneur_img3">
-                                <a href="#"><img class="image_de_la_carte3" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
-                            </div>
-
-                            <div class="conteneur_text">
-
-                                <H3>Auberge La Cannebière</H3>
-                                <p>Nuit à partir de </p><span>25€</span>
-
-                                <div class="étoiles">
-                                    <i class="fas fa-star" ></i>
-                                    <i class="fas fa-star" ></i>
-                                    <i class="fas fa-star" ></i>
-                                    <i class="fas fa-star" ></i>
-                                    <i class="fas fa-star" ></i>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cartesS3">
-                            <div class="conteneur_img3">
-                                    <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
-                                </div>
-
-                                <div class="conteneur_text">
-
-                                    <H3>Auberge La Cannebière</H3>
-                                    <p>Nuit à partir de </p><span>25€</span>
-
-                                    <div class="étoiles">
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
-                                        <i class="fas fa-star" ></i>
+                                <div class="cartesS3">
+                                    <div class="conteneur_img3">
+                                        <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
                                     </div>
-                                </div>    
-                        </div>   
 
+                                    <div class="conteneur_text">
+
+                                        <H3>Auberge La Cannebière</H3>
+                                        <p>Nuit à partir de </p><span>25€</span>
+
+                                        <div class="étoiles">
+                                            <i class="fas fa-star" ></i>
+                                            <i class="fas fa-star" ></i>
+                                            <i class="fas fa-star" ></i>
+                                            <i class="fas fa-star" ></i>
+                                            <i class="fas fa-star" ></i>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </a>   
+                                
+                            <a href="#"> <!--lien vers la page de l'hébergement-->
+
+                                <div class="cartesS3">
+                                    <div class="conteneur_img3">
+                                        <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
+                                    </div>
+
+                                    <div class="conteneur_text">
+
+                                        <H3>Auberge La Cannebière</H3>
+                                        <p>Nuit à partir de </p><span>25€</span>
+
+                                        <div class="étoiles">
+                                            <i class="fas fa-star" ></i>
+                                            <i class="fas fa-star" ></i>
+                                            <i class="fas fa-star" ></i>
+                                            <i class="fas fa-star" ></i>
+                                            <i class="fas fa-star" ></i>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                
+                            </a>   
+                            
+                            <a href="#"> <!--lien vers la page de l'hébergement-->
+
+                                <div class="cartesS3">
+                                    <div class="conteneur_img3">
+                                        <a href="#"><img class="image_de_la_carte" src="https://res.cloudinary.com/jochri3/image/upload/v1625127299/OC/1-reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre cannebière"></a>
+                                    </div>
+
+                                    <div class="conteneur_text">
+
+                                        <H3>Auberge La Cannebière</H3>
+                                        <p>Nuit à partir de </p><span>25€</span>
+
+                                        <div class="étoiles">
+                                            <i class="fas fa-star" ></i>
+                                            <i class="fas fa-star" ></i>
+                                            <i class="fas fa-star" ></i>
+                                            <i class="fas fa-star" ></i>
+                                            <i class="fas fa-star" ></i>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                
+                            </a>   
+                            
+                        </div>
                     </div>
 
-                </aside>   
+                </div>   
 
-            </div> <!--   fin de sbloc de section 2 et 3   -->
-
+                
+            
 
                 <!-- section "Activités à Marseille" -->
 
@@ -342,6 +363,7 @@
                     <h2 id="Activités">Activités à Marseille</h2>
 
                     <div class="cartes_section4">
+
                         <div class="cartes1">
                             <a href="#"> <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo du vieux port de Marseille"></a>
                             <H3>Vieux port</H3>
@@ -375,47 +397,47 @@
                     </div>
 
                 </div>
-            
+                
 
-        </main>
-    
+            </main>
+        
 
-        <footer>
-            <!-- contenu du pied de page -->
+            <footer>
+                <!-- contenu du pied de page -->
 
-            <section id="Footer">
-                <div class="Listes_pp">
-                    
-                    <div id="A_propos">
-                        <h3>A propos</h3>
-                        <ul>
-                            <li><a href="#">Fonctionnement du site</a></li>
-                            <li><a href="#">Conditions générales de vente</a></li>
-                            <li><a href="#">Données et Confidentialité</a></li>
-                        </ul>
+                <section id="Footer">
+                    <div class="Listes_pp">
+                        
+                        <div id="A_propos">
+                            <h3>A propos</h3>
+                            <ul>
+                                <li><a href="#">Fonctionnement du site</a></li>
+                                <li><a href="#">Conditions générales de vente</a></li>
+                                <li><a href="#">Données et Confidentialité</a></li>
+                            </ul>
+                        </div>
+
+                        <div id="Nos_herbergements">
+                            <h3>Nos herbergements</h3>
+                            <ul>
+                                <li><a href="#">Charte Qualité</a></li>
+                                <li><a href="#">Soumettre votre hôtel</a></li>
+                            </ul>
+                        </div>
+
+                        <div id="Assistance">
+                            <h3>Assistance</h3>
+                            <ul>
+                                <li><a href="#">Centre d'aide</a></li>
+                                <li><a href="#">Nous contacter</a></li>
+                            </ul>
+                        </div>
+
                     </div>
+                </section>
 
-                    <div id="Nos_herbergements">
-                        <h3>Nos herbergements</h3>
-                        <ul>
-                            <li><a href="#">Charte Qualité</a></li>
-                            <li><a href="#">Soumettre votre hôtel</a></li>
-                        </ul>
-                    </div>
-
-                    <div id="Assistance">
-                        <h3>Assistance</h3>
-                        <ul>
-                            <li><a href="#">Centre d'aide</a></li>
-                            <li><a href="#">Nous contacter</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </section>
-
-        </footer>
-
+            </footer>
+        </div>  
     </body> 
 
 </html>
