@@ -21,12 +21,16 @@ body
 	}
 
 
-h1 { 
+h1, h2 { 
 	font-size: 20px;
+	font-weight:bolder;
 	}
-
+h3 { 
+		font-size: 14px;
+		}
+	
 p {
-	font-size:80%;
+	font-size: 12px;
 	}
 .bleu {color: #0065FC;}
 .bleuclair {color: #DEEBFF;}
@@ -304,7 +308,7 @@ margin: 10px;
 			margin: 10px 10px 10px 10px;
 			
 			font-size: 60%;
-			border-radius:2rem;
+			border-radius:15px;
 			box-shadow:3px 3px 10px 
 				
 			}
@@ -331,13 +335,21 @@ margin: 10px;
 					{ 
 					display: flex;
 					flex-direction: column;
+					font-weight: 500;
+					line-height: 0px;
+					padding-top: 5%;
+
+					justify-content: center;
 					padding-left:10px;
 					padding-bottom: 20px;
 
 					}
 
+					.valeur{ font-weight: 900;}
+					.euro {font-weight: 900;}
+					
 					.fa-star
-					{
+					{padding-top: 5px;
 					color:#0065FC;
 					}
 				
@@ -352,7 +364,8 @@ margin: 10px;
 				}
 			
 				.afficherplus
-			{font-size: 20px;}
+			{font-size: 20px;
+			font-weight: 800;}
 	
 /* SECTION 3 Les plus populaires */
 	
