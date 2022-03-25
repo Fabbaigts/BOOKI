@@ -1,609 +1,568 @@
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
 /* --------------------------------*/
 /* ---------Règles générales-------*/
 
-
-html
-	{
-	font-family: 'Raleway', sans-serif;
-	
-	}
-
-#bloc_page
-	{
-		min-width: 996px;
-		margin: 0px 5px 5px 0px;
-	}
-
-body 
-	{
-	width:auto;
-	
-	}
-footer
-{display: flex;
-	justify-content: flex-start;
-background-color: #f2f2f2;
-
-
+html {
+  font-family: "Raleway", sans-serif;
 }
-h1, h2 { 
-	font-size: 20px;
-	font-weight:bolder;
-	}
-h3 { 
-		font-size: 14px;
-		}
-	
+
+#bloc_page {
+  min-width: 996px;
+  margin: 0px 5px 5px 0px;
+}
+
+body {
+  width: auto;
+  padding: 10px;
+}
+footer {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f2f2f2;
+}
+h1,
+h2 {
+  font-size: 18px;
+  font-weight: bolder;
+}
+h3 {
+  display: inline-flex;
+
+  margin-right: 10px;
+  margin-top: 7px;
+  color: #000000;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
 p {
-	font-size: 14px;
-	}
-.bleu {color: #0065FC;}
-.bleuclair {color: #DEEBFF;}
-.gris {color: #f2f2f2;}
+  font-size: 13px;
+}
+.bleu {
+  color: #0065fc;
+}
+.bleuclair {
+  color: #deebff;
+}
+.gris {
+  color: #f2f2f2;
+}
 
 /* ------------------------------------------------------*/
 /* ----------Règles applicables au HEADER ---------------*/
 /* ------------------------------------------------------*/
-header { display: flex;
-	
-	justify-content: space-between;
-	align-items: center;
-	height: 100px;
-	
+header {
+  display: flex;
 
-	
-		}
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
 
-	.bloclogo 
-	{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.bloclogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-	}
+#logo img {
+  justify-content: center;
+  width: 60%;
+}
 
-		#logo img 
-		{		
-		justify-content: center;
-		width: 60%;
-		
-		}	
-	
+nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  justify-content: center;
+}
 
+.liste_de_navigation {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+  height: 100%;
+}
 
-	nav
-		{   
-		display: flex;
-		align-items: center;
-		height: 100%;
-		width: auto;
-		justify-content:center;
-		}
+a:link {
+  text-decoration: none;
+  color: black;
+}
 
-	 .liste_de_navigation
-		{
-		display: flex;
-		align-items: center;
-		padding-left: 0px;
-		height: 100%
-	
-		}
+a:hover {
+  color: #0065fc;
+}
 
-	a:link 
-		{ 
- 		text-decoration:none; 
-		color : black;
-		} 
+.élément_de_navigation {
+  display: flex;
+  border: 3px solid transparent;
+  height: 95%;
+  align-items: center;
+  width: auto;
+  margin: 10px;
+}
 
-		a:hover 
-		{
-		color :#0065FC
-
-		}
-
-				.élément_de_navigation
-				{
-				display: flex;
-				border: 3px solid transparent;
-				height: 95%;
-				align-items: center;
-				width: auto;
-				margin: 10px;						
-				}	
-
-				.élément_de_navigation:hover 
-				{ 
-				display: flex;
-				border-top: 3px solid #0065FC;
-				 
-				}
+.élément_de_navigation:hover {
+  display: flex;
+  border-top: 3px solid #0065fc;
+}
 
 /*-------------Bloc de SECTION 1 de recherche---------------*/
 
+.barre_de_recherche {
+  display: inline-flex;
 
-.barre_de_recherche
-{
-display: inline-flex;
-
-align-items: center;
-border: solid #e6e6e6 1px;
-border-radius: 10px 10px 10px 10px;
-
+  align-items: center;
+  border: solid #e6e6e6 1px;
+  border-radius: 10px 10px 10px 10px;
 }
 
-		
-		
-	.fa-location-dot 
-	{
-		display: flex;
+.fa-location-dot {
+  display: flex;
 
-		background-color: rgb(236, 236, 236);
-		padding-left: 15px;
-		padding-right: 15px;
-		padding-top: 13px;
-		padding-bottom: 15px;
-		border-radius: 10px 0 0 10px;
-		
-		
+  background-color: rgb(236, 236, 236);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px 0 0 10px;
+}
 
-	}
+input {
+  display: inline-block;
 
-	input {display :inline-block;
-		
-		border:none;
-		font-weight: 700;
-		padding-left: 10px;
-		margin-right: 2px;
-		
-	}
+  border: none;
+  font-weight: 700;
+  padding-left: 10px;
+  margin-right: 2px;
+}
 
-	button
-	{ display: inline-block;
-		height: 44px;
-		border-style: none;
-		background-color: #0065FC;
-		
-		border-radius: 0 10px 10px 0;
+button {
+  display: inline-block;
+  height: 45px;
+  border-style: none;
+  background-color: #0065fc;
 
-		padding-left: 20px;
-		padding-right: 20px;}
+  border-radius: 0 10px 10px 0;
 
-	button:hover
-	{ 
-		cursor:pointer;
-			box-shadow:5px 5px 10px gray;
-			transform:translateY(-1px);
-			background-color: #0065FC;
-			font-style: color black;
-	}
-	
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-	.recherche 
-	{
-		color: rgb(255, 255, 255);
-	}
-	
-	/*-------------FILTRES---------------*/
+button:hover {
+  box-shadow: 5px 5px 10px rgba(199, 198, 198, 0.808);
+  cursor: pointer;
+}
 
+button:active {
+  background: linear-gradient(#014dc0ec, #0060f0ef, #025adfea, #0156d6e1);
 
-	.zonefiltres 
-	{
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 30px;
-	margin-left: 5px;
-		
+  padding-top: 2px;
+}
 
+.recherche {
+  color: rgb(255, 255, 255);
+}
 
-	
-	
-	}
+/*-------------FILTRES---------------*/
 
+.zonefiltres {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 5px;
+}
 
-		h3{
-		display:flex;
-		margin-right: 10px;
-		margin-top: 7px;
-		color: #000000;
-		font-weight:bolder;
-		font-size:larger;
-		}
+.boutondetri /* cible le bouton dans son intégralité */ {
+  display: flex;
+  align-items: center;
+  border: solid #ebe8e8 1px;
+  height: 30px;
 
-		.boutondetri /* cible le bouton dans son intégralité */
-		{
-			display:flex;
-			align-items: center;
-			border: solid #ebe8e8 1px;
-			height:30px;
-	
-			border-radius: 17.5px ;
-			padding-bottom: 3px;
-			padding-top: 2px;
-			padding-right: 10px;
-			margin: 0px 10px 0px 10px;
-			font-weight: 900;
-		
-		}
+  border-radius: 17.5px;
+  padding-bottom: 3px;
+  padding-top: 2px;
+  padding-right: 10px;
+  margin: 0px 10px 0px 10px;
+  font-weight: 800;
+}
 
-		.boutondetri:hover /* cible le bouton dans son intégralité */
-		{
-			cursor:pointer;
-			box-shadow:5px 5px 10px gray;
-			transform:translateY(-1px);
-			background-color: #f2f2f2;
-			
-		
-		}
-		
-		.boutondetri i /* cible l'icône */
-		{ 
-			display: flex;
-			background-color: #DEEBFF;
-			padding: 10px;
-			color:#0065FC;
-			margin-top: 2px;
-			margin-right: 10px;
-			margin-left: -1px; /* alignement sur le trait de contour */
-			border-radius: 50%;
-			
-		}
-		
+.boutondetri:hover /* cible le bouton dans son intégralité */ {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(224, 224, 224, 0.808);
+  transform: translateY(-1px);
+  background-color: #f2f2f2;
+}
+.boutondetri:active {
+  box-shadow: 5px 5px 10px rgba(248, 247, 247, 0.808);
+  transform: translateY(-1px);
+}
 
-		.libellébouton
-		{ font-size:90%;
-	
-		}
+.boutondetri i /* cible l'icône */ {
+  display: flex;
+  background-color: #deebff;
+  padding: 10px;
+  color: #0065fc;
+  margin-top: 2px;
+  margin-right: 10px;
+  margin-left: -1px; /* alignement sur le trait de contour */
+  border-radius: 50%;
+}
 
-		.Résultats_de_recherche 
-		{
-		display: inline-flex;
-			align-items: center;
-			margin-left:5px ;
-			
-		}
+.libellébouton {
+  font-size: 90%;
+}
 
+.Résultats_de_recherche {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 5px;
+}
 
-		.fa-info {
-			color:#0065FC;
-			margin:10px ;
-			background-color:#f2f2f2 ;
-			padding: 10px 15px 10px 15px;
-			border-radius: 50%;
-		}
-
-
-
+.fa-info {
+  color: #0065fc;
+  margin: 10px;
+  background-color: #f2f2f2;
+  padding: 10px 15px 10px 15px;
+  border-radius: 50%;
+}
 
 /*------------- SECTIONS 2 et 3---------------*/
 
-	
-.conteneur_S2_S3
-{
-display: flex;
-margin: 10px;
-
+.conteneur_S2_S3 {
+  display: flex;
 }
 
-	/* SECTION 2 Hébergements à marseille */
+/* SECTION 2 Hébergements à marseille */
 
-	
-	.section2
-	{
-	display: flex;
-	width: 66%;
-	flex-direction: column;
+.section2 {
+  display: flex;
+  width: 66%;
+  flex-direction: column;
 
-	background-color: #f2f2f2;
-	padding: 10px;
-	border-radius: 20px;
-	margin-right: 5px;
-	}
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
 
-		#Hébergements 
-		{
-		margin-left: 10px;
-		}
-		
-		.conteneur_des_cartes_S2 
-		{
-		display:flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		
-		justify-content:flex-start;
-		margin: 10px;
-		}
-			
+#Hébergements {
+  margin-left: 10px;
+}
 
-			.cartesS2
-			{
-			display:flex;
-			width: 30%;
-			height: auto;
-			flex-direction: column;
-			
-			background-color: rgb(255, 255, 255);
-			margin: 10px 10px 10px 10px;
-			
-			font-size: 60%;
-			border-radius:15px;
-			box-shadow:3px 3px 10px 
-				
-			}
-		
-	  
-	  
-				.conteneur_img
-				{
-				display: flex;
-				width:auto;
-				height:auto;
-				margin: 2%;
-				
-				}	  
-					.image_de_la_carte
-					{
-					width:100%;
-					height: 100px;
-					border-radius:15px 15px 0 0 ;
-					object-fit:cover;
-					}
-					
-					.conteneur_text_s2
-					{ 
-					display: flex;
-					flex-direction: column;
-					font-weight: 500;
-					line-height: 0px;
-					justify-content: center;
-					padding-left:10px;
-					padding-bottom: 20px;
+.conteneur_des_cartes_S2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-					}
+  justify-content: flex-start;
+}
 
-					.valeur
-					{
-					 font-weight: 900;
-					}
+.cartesS2 {
+  display: flex;
+  width: 30%;
+  height: auto;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  margin: 10px 10px 10px 10px;
+  font-size: 100%;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #808080;
+}
 
-					.euro 
-					{
-					font-weight: 900;
-					}
-					
-					.fa-star
-					{
-					padding-top: 5px;
-					color:#0065FC;
-					}
-				
-	  
-	  
-				.cartesS2:hover
-				{
+.conteneur_img {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin: 2%;
+}
+.image_de_la_carte {
+  width: 100%;
+  height: 100px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
 
-					cursor:pointer;
-					box-shadow:5px 5px 10px gray;
-					transform:translateY(-5px);
-				}
-			
-				.afficherplus
-			{font-size: 20px;
-			font-weight: 800;}
-	
+.conteneur_text_s2 {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 20px;
+  justify-content: center;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.valeur {
+  font-weight: 900;
+}
+
+.euro {
+  font-weight: 900;
+}
+
+.fa-star {
+  padding-top: 5px;
+  color: #0065fc;
+}
+
+.cartesS2:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px gray;
+  transform: translateY(-5px);
+}
+
+.afficherplus {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px;
+}
+
 /* SECTION 3 Les plus populaires */
-	
-.section3 
-{
-	display: flex;
-	width:31%;
-	flex-direction: column;
 
-	background-color: #f2f2f2;
-	padding: 10px;
-	border-radius: 20px;
-	margin-left: 5px;
-	}
-.Titrepopulaires 
-{display:inline-flex;
-	justify-content: space-between;
-	align-items: center;
+.section3 {
+  display: flex;
+  width: 31%;
+  flex-direction: column;
 
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 5px;
+}
+
+.Titrepopulaires {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 10px;
+  margin-bottom: 0px;
+}
+#populaires {
+  margin-bottom: 0px;
+}
+
+.conteneur_cartes_S3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 10px 5px 10px;
+  height: 100%;
+  
+  line-height: 20px;
+}
+
+.cartesS3 {
+  display: flex;
+
+  height: 130px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px #808080;
+  font-size: 70%;
+}
+
+.conteneur_img3 {
+  display: flex;
+  max-width: 120px;
+  height: 120px;
+  margin: 5px 10px 5px 5px;
+}
+
+.cartesS3 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px 15px 15px 15px;
+  object-fit: cover;
+}
+
+.conteneur_text_s3 {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  border: solid #4400ff 3px;
+}
+
+.cartesS3:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px gray;
+  transform: translateY(-5px);
+}
+
+.fa-star {
+  color: #0065fc;
+}
+
+/*--------- SECTION 4 Activités à Marseille */
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteneur_des_cartes_de_la_S4 {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  border: solid #4400ff 3px;
+}
+
+.conteneur_de_1_carte {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+ justify-content: space-between;
+  border: solid #4400ff 3px;
+  padding: 10px 10px 10px 0px;
+}
+.grande_image_de_la_carte_s4 {
+  display: flex;
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  border: solid #ddff00 3px;
+}
+
+.Text_carte_simple {
+  display: flex;
+  height: 100%;
+  margin-left: 10px;
+ 
+
+}
+
+.conteneur_de_2_cartes {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height:100%;
+  justify-content: space-between;
+  border: solid #4400ff 3px;
+  padding: 10px 10px 10px 0px;
+}
+}
+
+.carte_duconteneurdouble {
+  display: flex;
+  flex-direction: column;
+ 
+  height: 40%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.conteneur_img {
+  display: flex;
+  width: auto;
+  height: 200px;
+ 
+}
+.image_de_la_carte {
+  width: 100%;
+  height:100%;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.Text_carte_double {
+  display: flex;
+  height: 100%;
+  margin-left: 10px;
 
 }
 
 
 
-	.conteneur_cartes_S3 
-	{
-	display: flex;
-	flex-direction:column;
-	justify-content:space-between;
+.petite_image_de_la_carte {
+  display: flex;
 
-	margin: 10px 10px 10px 10px;
-	height: 100%;
-		
-		
-	}
-	
-							
-	
-	
-
-				.cartesS3 
-				{ 
-				display: flex;
-			
-			
-				height: 130px;
-				border-radius:15px;
-				box-shadow:3px 3px 10px ;
-				font-size: 70%;
-				}
-					
-				  
-				  
-				  .conteneur_img3{ display: flex;
-					max-width:100px;
-					height:100px ;
-					margin: 2%;}
-				  
-				  .cartesS3 img {
-					width:100%;
-					height:100%;
-					border-radius:15px 15px 15px 15px;
-					object-fit:cover;
-				  }
-				  
-				  .conteneur_text_s3{display:flex;
-					flex-direction: column;
-					width: auto;
-					border: solid #4400ff 3px;
-					;
-				  }
-				  
-				  
-				  
-				  .card:hover{
-					cursor:pointer;
-					box-shadow:5px 5px 10px gray;
-					transform:translateY(-5px);
-				  }
-				  
-				  .fas:not(:last-child){
-					color:#0065FC;
-				  }
-	
-	.étoiles 
-	{
-
-
-	}
-
-
-
-
-
-	/* SECTION 3 LES PLUS POPULAIRES */
-
-	.section3 
-	{
-	display: flex;
-	flex-direction: column;
-			
-
-	}
-
-
-
-
-	/* SECTION 4 Activités à Marseille */
-
-
-	.section4 
-{
-	justify-content:center;
-
-
-	
-
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  border: solid #ddff00 3px;
 }
 
+/* -----------------Footer-------------- */
 
-	.conteneur_cartes_S4
-	{
-	display: flex;
-	height:450px;
-	flex-direction:column ;
-	flex-wrap: wrap;
-	justify-content:flex-end;
-	
-	
+.conteneur_blocs_footer {
+  display: flex;
+  margin: 20px;
+  justify-content: space-around;
+}
 
+.bloc_footer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px 10px 20px;
+  align-items: ;
+}
 
-	}
+.elements_bloc_footer {
+  display: block;
+  list-style: none;
 
-	.carte_S4
-	{
-		display: flex;
-		flex-direction: column;
-		width:25%;
-		
-		margin-left: 10px;
-		margin-right: 10px;
-	
-
-	}
-
-
-
-	.conteneur_image_S4 
-	{
-		display: flex;
-		width:auto;
-		height:auto;
-		
-
-	}
-	.grande_image_de_la_carte_s4 {
-		display:flex;
-		height: 400px;
-		width: 100%;
-		object-fit: cover;
-		border-radius: 10px 10px 0 0;
-	
-
-	}
-	.image_de_la_carte_s4
-	{ display:flex;
-		height:160px;
-		border-radius: 10px 10px 0 0;
-
-		
-
-
-	
-	}
-
-		/* -----------------Footer-------------- */
-
-	.conteneur_blocs_footer
-	{
-	display:flex ;
-	margin: 10px
-
-	
-	
-
-
-	}
-	
-	.bloc_footer
-	{ 
-	display: flex;
-	flex-direction: column;
-	margin: 10px 20px 10px 20px
-
-	
-	
-
-	}
-
-	.elements_bloc_footer
-	{
-		display:block;
-		list-style: none;
-		
-		padding-left: 0px;
-
-	}
-	
-	
-	
-
-	.ul .elements_bloc_footer 
-	{
-
-
-	}
+  padding-left: 0px;
+}
+#Footer {
+  width: 100%;
+}
