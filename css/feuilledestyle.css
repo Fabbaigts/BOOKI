@@ -61,26 +61,28 @@ table {
 
 html {
   font-family: "Raleway", sans-serif;
+  font-size: 16px ;
 }
 
-#bloc_page {
-  min-width: 996px;
-  margin: 0px 5px 5px 0px;
-}
+
 
 body {
-  width: auto;
-  padding: 10px;
+  max-width: 992px;
+
+
 }
+
+
 footer {
   display: flex;
   justify-content: flex-start;
   background-color: #f2f2f2;
 }
-h1,
-h2 {
+
+
+h1,h2 {
   font-size: 18px;
-  font-weight: bolder;
+  font-weight:700;
 }
 h3 {
   display: inline-flex;
@@ -89,12 +91,15 @@ h3 {
   margin-top: 7px;
   color: #000000;
   font-weight: bolder;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 p {
   font-size: 13px;
+  line-height: 30px;
+  
 }
+
 .bleu {
   color: #0065fc;
 }
@@ -115,16 +120,16 @@ header {
   align-items: center;
   height: 100px;
 }
+.Titre_principale_slogan
+{
 
-.bloclogo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 10px
 }
 
 #logo img {
   justify-content: center;
-  width: 60%;
+  width: 40%;
+  margin-left: 20px;
 }
 
 nav {
@@ -145,6 +150,8 @@ nav {
 a:link {
   text-decoration: none;
   color: black;
+  font-size: 12px ;
+  font-weight: 600;
 }
 
 a:hover {
@@ -154,10 +161,11 @@ a:hover {
 .élément_de_navigation {
   display: flex;
   border: 3px solid transparent;
-  height: 95%;
+  height: 93%;
   align-items: center;
   width: auto;
   margin: 10px;
+  padding : 0px 10px 0px 10px
 }
 
 .élément_de_navigation:hover {
@@ -165,7 +173,11 @@ a:hover {
   border-top: 3px solid #0065fc;
 }
 
-/*-------------Bloc de SECTION 1 de recherche---------------*/
+/*-------------Bloc  SECTION 1  recherche---------------*/
+.section_de_recherche
+{
+
+}
 
 .barre_de_recherche {
   display: inline-flex;
@@ -173,6 +185,7 @@ a:hover {
   align-items: center;
   border: solid #e6e6e6 1px;
   border-radius: 10px 10px 10px 10px;
+  margin-left: 10px;
 }
 
 .fa-location-dot {
@@ -226,9 +239,10 @@ button:active {
 
 .zonefiltres {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   margin-top: 30px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .boutondetri /* cible le bouton dans son intégralité */ {
@@ -242,8 +256,10 @@ button:active {
   padding-top: 2px;
   padding-right: 10px;
   margin: 0px 10px 0px 10px;
-  font-weight: 800;
+  
 }
+
+
 
 .boutondetri:hover /* cible le bouton dans son intégralité */ {
   cursor: pointer;
@@ -256,7 +272,7 @@ button:active {
   transform: translateY(-1px);
 }
 
-.boutondetri i /* cible l'icône */ {
+.boutondetri i /* cible les icônes des filtres */ {
   display: flex;
   background-color: #deebff;
   padding: 10px;
@@ -268,20 +284,27 @@ button:active {
 }
 
 .libellébouton {
-  font-size: 90%;
+  font-size: 14px;
+  font-weight: 800;
+  padding-right: 10px;
 }
 
 .Résultats_de_recherche {
   display: inline-flex;
   align-items: center;
-  margin-left: 5px;
+  margin: 10px;
+  padding: 15px 0px 15px 0px ;
+
 }
 
 .fa-info {
+  font-size: 10px ;
   color: #0065fc;
-  margin: 10px;
-  background-color: #f2f2f2;
-  padding: 10px 15px 10px 15px;
+ 
+  background-color: #ffffff;
+  padding: 5px 8px 5px 8px;
+  margin-right: 5px;
+  border: solid 1px #f2f2f2;
   border-radius: 50%;
 }
 
@@ -299,13 +322,14 @@ button:active {
   flex-direction: column;
 
   background-color: #f2f2f2;
-  padding: 10px;
+  padding: 20px;
   border-radius: 20px;
   margin-right: 5px;
 }
 
 #Hébergements {
-  margin-left: 10px;
+  padding : 10px;
+ 
 }
 
 .conteneur_des_cartes_S2 {
@@ -320,38 +344,45 @@ button:active {
 .cartesS2 {
   display: flex;
   width: 30%;
-  height: auto;
+  height:auto;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
   margin: 10px 10px 10px 10px;
-  font-size: 100%;
+justify-content: center;
   border-radius: 20px;
   box-shadow: 3px 3px 10px #808080;
 }
 
 .conteneur_img {
-  display: flex;
+  display: block;
   width: auto;
-  height: auto;
+  height: 80px ;
   margin: 2%;
+  
 }
 .image_de_la_carte {
   width: 100%;
-  height: 100px;
+  height: 100%;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
+  overflow:hidden;
 }
 
 .conteneur_text_s2 {
   display: flex;
   flex-direction: column;
 
-  line-height: 20px;
+  
   justify-content: center;
-  padding-left: 10px;
+  padding-left: 12px;
   padding-bottom: 10px;
 }
+.nuit
+{display:block;
+  font-size: 11px;
 
+
+}
 .valeur {
   font-weight: 900;
 }
@@ -360,9 +391,16 @@ button:active {
   font-weight: 900;
 }
 
+.étoiles
+{display:flex;
+justify-content: left;
+   
+}
 .fa-star {
-  padding-top: 5px;
+ 
+  font-size:10px;
   color: #0065fc;
+  
 }
 
 .cartesS2:hover {
@@ -372,9 +410,9 @@ button:active {
 }
 
 .afficherplus {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 800;
-  padding: 10px;
+  padding: 15px 0px 5px 10px;
 }
 
 /* SECTION 3 Les plus populaires */
@@ -385,7 +423,7 @@ button:active {
   flex-direction: column;
 
   background-color: #f2f2f2;
-  padding: 10px;
+  padding: 20px;
   border-radius: 20px;
   margin-left: 5px;
 }
@@ -413,32 +451,34 @@ button:active {
 
 .cartesS3 {
   display: flex;
-
-  height: 130px;
+  align-items: center;
+  height: 102px;
+  padding: 4px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px #808080;
-  font-size: 70%;
 }
 
 .conteneur_img3 {
   display: flex;
-  max-width: 120px;
-  height: 120px;
-  margin: 5px 10px 5px 5px;
+  max-width: 100px;
+  height: 100px;
+  
 }
 
 .cartesS3 img {
   width: 100%;
   height: 100%;
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 0px 0px 15px;
   object-fit: cover;
 }
 
-.conteneur_text_s3 {
+.conteneur_text_S3 {
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
   width: auto;
-  border: solid #4400ff 3px;
+
 }
 
 .cartesS3:hover {
@@ -446,90 +486,101 @@ button:active {
   box-shadow: 5px 5px 10px gray;
   transform: translateY(-5px);
 }
-
-.fa-star {
-  color: #0065fc;
-}
-
 /*--------- SECTION 4 Activités à Marseille */
 
-.section4 {
+.section4 
+{
   display: flex;
   flex-direction: column;
 }
 
-.conteneur_des_cartes_de_la_S4 {
+.conteneur_des_cartes_de_la_S4 
+{
   display: flex;
-  height: 500px;
+  height: 400px;
   width: 100%;
   border: solid #4400ff 3px;
 }
 
-.conteneur_de_1_carte {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
- justify-content: space-between;
-  border: solid #4400ff 3px;
-  padding: 10px 10px 10px 0px;
-}
-.grande_image_de_la_carte_s4 {
-  display: flex;
-  height: 450px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-  border: solid #ddff00 3px;
-}
+    .conteneur_de_1_carte 
+    {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      justify-content: space-between;
+      border: solid #4400ff 3px;
+      padding: 10px 10px 10px 0px;
+    }
+        .grande_image_de_la_carte_s4 
+        {
+          display: flex;
+          height: 340px;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 15px 15px 0 0;
+          border: solid #ddff00 3px;
+        }
 
-.Text_carte_simple {
-  display: flex;
-  height: 100%;
-  margin-left: 10px;
- 
+        .Text_carte_simple 
+        {
+         display: flex;
+            height: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
 
-}
+    .conteneur_de_2_cartes 
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-end;
+      width: 50%;
+    
+      border: solid #4400ff 3px;
+    
+    }
 
-.conteneur_de_2_cartes {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height:100%;
-  justify-content: space-between;
-  border: solid #4400ff 3px;
-  padding: 10px 10px 10px 0px;
-}
-}
+        .carte_duconteneurdouble 
+        {
+          border: solid #ff9100 3px;
+          align-content;
+          flex-direction: column;
+        
+          height:100%;
+          width: 100%;
+          object-fit: cover;
 
-.carte_duconteneurdouble {
-  display: flex;
-  flex-direction: column;
- 
-  height: 40%;
-  width: 100%;
-  object-fit: cover;
+        }
 
-}
+          .petit_conteneur_img {
+          width: 100%;
+          height: 90px;
+          margin-top: 10px;
+          
+          }
+          
+          .grand_conteneur_img {
+          width: 100%;
+          height:150px;
+          
+          }
 
-.conteneur_img {
-  display: flex;
-  width: auto;
-  height: 200px;
- 
-}
-.image_de_la_carte {
-  width: 100%;
-  height:100%;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
-}
 
-.Text_carte_double {
-  display: flex;
-  height: 100%;
-  margin-left: 10px;
 
-}
+          .image_de_la_carte {
+            width: 100%;
+            height:100%;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+          }
+
+          .Text_carte_double {
+            display: flex;
+            height: 20px;
+            margin-left: 10px;
+            margin-top: 10px;
+
+          }
 
 
 
