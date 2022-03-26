@@ -62,6 +62,7 @@ table {
 html {
   font-family: "Raleway", sans-serif;
   font-size: 16px ;
+
 }
 
 
@@ -80,23 +81,22 @@ footer {
 }
 
 
-h1,h2 {
+h1,h2 {font-weight: bolder;
   font-size: 18px;
-  font-weight:700;
+  font-weight:800;
 }
 h3 {
   display: inline-flex;
-
-  margin-right: 10px;
-  margin-top: 7px;
+ 
   color: #000000;
-  font-weight: bolder;
+  font-weight: 800;
   font-size: 12px;
 }
 
 p {
   font-size: 13px;
   line-height: 30px;
+  font-weight: 600;
   
 }
 
@@ -298,13 +298,14 @@ button:active {
 }
 
 .fa-info {
-  font-size: 10px ;
+  font-size: 12px ;
   color: #0065fc;
+  font-weight:bolder;
  
   background-color: #ffffff;
-  padding: 5px 8px 5px 8px;
+  padding: 2px 6px 2px 6px;
   margin-right: 5px;
-  border: solid 1px #f2f2f2;
+  border: solid 2px #f2f2f2;
   border-radius: 50%;
 }
 
@@ -357,7 +358,7 @@ justify-content: center;
   display: block;
   width: auto;
   height: 80px ;
-  margin: 2%;
+  margin:4px;
   
 }
 .image_de_la_carte {
@@ -371,11 +372,11 @@ justify-content: center;
 .conteneur_text_s2 {
   display: flex;
   flex-direction: column;
-
-  
+  line-height: 5px;
   justify-content: center;
   padding-left: 12px;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 .nuit
 {display:block;
@@ -410,7 +411,7 @@ justify-content: left;
 }
 
 .afficherplus {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 800;
   padding: 15px 0px 5px 10px;
 }
@@ -475,6 +476,7 @@ justify-content: left;
 .conteneur_text_S3 {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
   width: auto;
