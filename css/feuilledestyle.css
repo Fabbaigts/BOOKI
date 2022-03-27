@@ -493,109 +493,206 @@ justify-content: left;
 
 .section4 
 {
-  display: flex;
-  flex-direction: column;
+display: flex;
+
+flex-direction: column;
+padding:20px 0px 20px 0px
 }
 
-.conteneur_des_cartes_de_la_S4 
+
+.conteneur_des_colonnes
+{
+display: flex;
+height: 380px;
+
+
+}
+
+
+
+
+.Conteneur_de_2_colonnes
+{
+display:flex;
+
+width: 50%;
+border: solid #060686 1px;
+
+
+
+}
+
+.colonne_1
+{
+display: flex;
+flex-direction: column;
+width: 50%;
+padding: 10px 10px 10px 0px;
+border: solid #060686 1px;
+
+}
+
+.colonne_2
+{
+display: flex;
+flex-direction: column;
+width: 50%;
+padding: 10px 10px 10px 10px;
+border: solid #060686 1px;
+justify-content: space-between;
+}
+
+.colonne_3
+{
+display: flex;
+flex-direction: column;
+width: 50%;
+padding: 10px 10px 10px 10px;
+border: solid #060686 1px;
+}
+
+
+.colonne_4
+{
+display: flex;
+flex-direction: column;
+width: 50%;
+padding: 10px 0px 10px 10px;
+border: solid #060686 1px;
+justify-content: space-between;
+}
+
+
+.carte_grande_image
 {
   display: flex;
-  height: 400px;
-  width: 100%;
-  border: solid #4400ff 3px;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 15px;
+  padding: 3px ;
+  box-shadow: 3px 3px 10px #808080;
 }
 
-    .conteneur_de_1_carte 
-    {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      justify-content: space-between;
-      border: solid #4400ff 3px;
-      padding: 10px 10px 10px 0px;
-    }
-        .grande_image_de_la_carte_s4 
-        {
-          display: flex;
-          height: 340px;
-          width: 100%;
-          object-fit: cover;
-          border-radius: 15px 15px 0 0;
-          border: solid #ddff00 3px;
-        }
-
-        .Text_carte_simple 
-        {
-         display: flex;
-            height: 20px;
-            margin-left: 10px;
-            margin-top: 10px;
-        }
-
-    .conteneur_de_2_cartes 
-    {
-      display: flex;
-      flex-direction: column;
-      justify-content:flex-end;
-      width: 50%;
-    
-      border: solid #4400ff 3px;
-    
-    }
-
-        .carte_duconteneurdouble 
-        {
-          border: solid #ff9100 3px;
-          align-content;
-          flex-direction: column;
-        
-          height:100%;
-          width: 100%;
-          object-fit: cover;
-
-        }
-
-          .petit_conteneur_img {
-          width: 100%;
-          height: 90px;
-          margin-top: 10px;
-          
-          }
-          
-          .grand_conteneur_img {
-          width: 100%;
-          height:150px;
-          
-          }
-
-
-
-          .image_de_la_carte {
-            width: 100%;
-            height:100%;
-            border-radius: 15px 15px 0 0;
-            object-fit: cover;
-          }
-
-          .Text_carte_double {
-            display: flex;
-            height: 20px;
-            margin-left: 10px;
-            margin-top: 10px;
-
-          }
-
-
-
-.petite_image_de_la_carte {
-  display: flex;
-
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-  border: solid #ddff00 3px;
+.carte_grande_image:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px gray;
+  transform: translateY(-5px);
 }
 
+    .conteneur_grande_image
+    {
+    display:flex;
+    width:100%;
+    height: 100%;
+    
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+
+   
+
+
+
+}
+      .grande_image
+      {
+      display: flex;
+      width: 100%;
+      height: 100% ;
+      border-radius: 15px 5px 0px 0px;
+      object-fit: cover ;
+    
+
+      }
+
+      .légende_carte
+      {display:flex;
+        padding: 15px;
+
+
+      }
+
+
+
+
+.carte_moyenne_image
+{
+display: flex;
+flex-direction: column;
+height: 50%;
+border-radius: 15px;
+box-shadow: 3px 3px 10px #808080;
+
+padding: 3px;
+
+}
+
+.carte_moyenne_image:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px gray;
+  transform: translateY(-5px);
+}
+.conteneur_moyenne_image
+{
+  display:block;
+  width:100%;
+  height: 100%;
+
+  border-radius: 15px 15px 0px 0px;
+  overflow:hidden;
+  
+
+
+
+}
+
+.moyenne_image_de_la_carte
+{
+width: 100%;
+height: 100% ;
+   
+object-fit: cover ;
+
+
+}
+
+.carte_petite_image
+{
+display: flex;
+flex-direction: column;
+height: 37%;
+border-radius: 15px ;
+box-shadow: 3px 3px 10px #808080;
+padding: 3px;
+
+}
+.carte_petite_image:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 10px gray;
+  transform: translateY(-5px);
+}
+
+
+
+.conteneur_petite_image
+{
+  display:block;
+  width:100%;
+  height: 100%;
+ 
+  border-radius: 15px 15px 0px 0px;
+  overflow:hidden;
+}
+
+
+.petite_image_de_la_carte
+{
+  width: 100%;
+  height: 100% ;
+
+  object-fit: cover ;
+
+
+}
 /* -----------------Footer-------------- */
 
 .conteneur_blocs_footer {
