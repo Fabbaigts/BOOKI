@@ -72,7 +72,8 @@ body {
 
 
 }
-
+main 
+{margin : 0px 30px 0px 30px}
 
 footer {
   display: flex;
@@ -82,7 +83,7 @@ footer {
 
 
 h1,h2 {font-weight: bolder;
-  font-size: 18px;
+  font-size: 16px;
   font-weight:800;
 }
 h3 {
@@ -90,11 +91,11 @@ h3 {
  
   color: #000000;
   font-weight: 800;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 p {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 30px;
   font-weight: 600;
   
@@ -192,10 +193,10 @@ a:hover {
   display: flex;
 
   background-color: rgb(236, 236, 236);
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 10px 0 0 10px;
 }
 
@@ -205,12 +206,12 @@ input {
   border: none;
   font-weight: 700;
   padding-left: 10px;
-  margin-right: 2px;
+  width: 160px;
 }
 
 button {
   display: inline-block;
-  height: 45px;
+  height: 36px;
   border-style: none;
   background-color: #0065fc;
 
@@ -284,7 +285,7 @@ button:active {
 }
 
 .libellébouton {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 800;
   padding-right: 10px;
 }
@@ -298,7 +299,7 @@ button:active {
 }
 
 .fa-info {
-  font-size: 12px ;
+  font-size: 10px ;
   color: #0065fc;
   font-weight:bolder;
  
@@ -319,7 +320,7 @@ button:active {
 
 .section2 {
   display: flex;
-  width: 66%;
+  width: 70%;
   flex-direction: column;
 
   background-color: #f2f2f2;
@@ -339,12 +340,12 @@ button:active {
   align-items: center;
   flex-wrap: wrap;
 
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .cartesS2 {
   display: flex;
-  width: 30%;
+  width: 175px;
   height:auto;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
@@ -380,7 +381,7 @@ justify-content: center;
 }
 .nuit
 {display:block;
-  font-size: 11px;
+  font-size: 10px;
 
 
 }
@@ -420,13 +421,13 @@ justify-content: left;
 
 .section3 {
   display: flex;
-  width: 31%;
+  width: 30%;
   flex-direction: column;
 
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 20px;
-  margin-left: 5px;
+  margin-left: 10px
 }
 
 .Titrepopulaires {
@@ -453,8 +454,8 @@ justify-content: left;
 .cartesS3 {
   display: flex;
   align-items: center;
-  height: 102px;
-  padding: 4px;
+  height: 100px;
+  padding: 3px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px #808080;
 }
@@ -477,7 +478,7 @@ justify-content: left;
   display: flex;
   height: 90%;
   flex-direction: column;
-  padding:20px;
+  padding:10px;
   justify-content: space-between;
  
 
