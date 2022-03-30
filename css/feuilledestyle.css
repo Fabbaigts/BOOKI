@@ -163,6 +163,15 @@ nav
   height: 100%;
 }
 
+a 
+{
+
+
+align-items: center;
+flex-direction: row;
+text-decoration: none;
+color: black;
+}
 a:link 
 {
   text-decoration: none;
@@ -610,95 +619,64 @@ justify-content: space-between;
   box-shadow: 5px 5px 10px gray;
   transform: translateY(-5px);
 }
+.grande_image
+{
+  display: flex;
+  width: 100%;
+  height: 100% ;
+  border-radius: 15px 5px 0px 0px;
+  object-fit: cover ;
+}
 
-    .conteneur_grande_image
-    {
-    display:flex;
-    width:100%;
-    height: 100%;
-    border-radius: 15px 15px 0px 0px;
-    overflow: hidden;
-    }
-      .grande_image
-      {
-      display: flex;
-      width: 100%;
-      height: 100% ;
-      border-radius: 15px 5px 0px 0px;
-      object-fit: cover ;
-      }
-
-      .légende_carte
-      {
-        display:flex;
-        padding: 15px;
-      }
+.légende_carte
+{
+  display:flex;
+  padding: 15px;
+}
 
 
 
 
 .carte_moyenne_image
 {
-display: flex;
-flex-direction: column;
-height: 50%;
-border-radius: 15px;
-box-shadow: 3px 3px 10px #808080;
-padding: 3px;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px #808080;
+  padding: 3px;
 }
-
 .carte_moyenne_image:hover {
   cursor: pointer;
   box-shadow: 5px 5px 10px gray;
   transform: translateY(-5px);
 }
-.conteneur_moyenne_image
-{
-  display:block;
-  width:100%;
-  height: 100%;
-  border-radius: 15px 15px 0px 0px;
-  overflow:hidden;
-  }
-
 .moyenne_image_de_la_carte
 {
-width: 100%;
-height: 100% ;
-   object-fit: cover ;
+  width: 100%;
+  height: 70% ;
+  object-fit: cover ;
 }
+
 
 .carte_petite_image
 {
-display: flex;
-flex-direction: column;
-height: 37%;
-border-radius: 15px ;
-box-shadow: 3px 3px 10px #808080;
-padding: 3px;
+  display: flex;
+  flex-direction: column;
+  height: 37%;
+  border-radius: 15px ;
+  box-shadow: 3px 3px 10px #808080;
+  padding: 3px;
 }
 .carte_petite_image:hover {
   cursor: pointer;
   box-shadow: 5px 5px 10px gray;
   transform: translateY(-5px);
 }
-
-
-
-.conteneur_petite_image
-{
-  display:block;
-  width:100%;
-  height: 100%;
-   border-radius: 15px 15px 0px 0px;
-  overflow:hidden;
-}
-
-
 .petite_image_de_la_carte
 {
   width: 100%;
-  height: 100% ;
+  height: 70% ;
   object-fit: cover ;
 }
 /* -----------------Footer-------------- */
@@ -709,8 +687,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   background-color: #f2f2f2;
- 
-  height: 150px;
+   height: 150px;
 }
 
 .conteneur_blocs_footer {
@@ -718,7 +695,7 @@ footer {
   height: 120px;
   align-items: center;
   padding-left: 30px;
-  border: 1px solid #a1080800;
+  
 }
 
 .bloc_footer {
@@ -726,7 +703,7 @@ footer {
   flex-direction: column;
   margin: 40px 155px 0px 0px;
   height: 100%;
- border: 1px solid #4955ff00;
+ 
 }
 
 
@@ -734,6 +711,6 @@ footer {
   display: block;
   list-style: none;
   line-height: 20px;
-  border: 1px solid #47961300;
+ 
  }
 
