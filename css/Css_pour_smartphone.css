@@ -12,9 +12,8 @@
 /* ---------Règles générales-------*/
 
 
-body 
-{
-  min-width: 320px;/* ------taille mini smarthone 4, 5 et 6'-----*/
+#bloc_page{
+  min-width: 330px;/* ------taille mini smarthone 4, 5 et 6'-----*/
   
 }
 
@@ -65,16 +64,6 @@ p
   font-weight: 500;
 }
 
-.bleu 
-{
-  color: #0065fc;
-}
-.bleuclair {
-  color: #deebff;
-}
-.gris {
-  color: #f2f2f2;
-}
 
 /* ------------------------------------------------------*/
 /* ----------Règles applicables au HEADER ---------------*/
@@ -82,7 +71,6 @@ p
 header 
 {
   display: flex;
-
   flex-direction: column;
   align-items:center;
   height: 150px;
@@ -96,7 +84,6 @@ header
   flex-wrap: wrap;
   margin: 10px
 }
-
 
 
 }
@@ -128,8 +115,6 @@ nav
 
 a 
 {
-
-
 align-items: center;
 flex-direction: row;
 text-decoration: none;
@@ -140,7 +125,6 @@ a:link
 { display: flex;
   justify-content: center;
   text-decoration: none;
-  color: black;
   font-size: 15px ;
   font-weight: 500;
 }
@@ -326,18 +310,18 @@ button:active
 .Résultats_de_recherche 
 {
   display: flex;
-  align-items:flex-start;
+  align-items:baseline;
  
   margin: 10px;
   padding: 15px 0px 15px 0px ;
 }
 
 .fa-info {
-  font-size: 12px ;
+  font-size: 14px ;
   color: #0065fc;
   font-weight:bolder;
    background-color: #ffffff;
-  padding: 2px 6px 2px 6px;
+  padding: 3px 8px 4px 8px;
   margin-right: 10px;
   border: solid 2px #f2f2f2;
   border-radius: 50%;
@@ -364,7 +348,7 @@ button:active
 }
 
 #Hébergements {
-  padding : 10px 0px 15px 0px;
+  padding : 10px 0px 20px 0px;
  
 }
 
@@ -390,7 +374,7 @@ button:active
   margin: 0px 0px 20px 0px;
   padding: 0px;
   border-radius: 20px;
-  box-shadow: 3px 3px 10px #808080;
+  box-shadow: 3px 3px 10px #c2c0c0;
 }
 
 .conteneur_img {
@@ -466,10 +450,12 @@ padding-top: 3px;
 
 .section3 {
   display: flex;
-  min-width:fit-content;
+  width:100%;
   flex-direction:column;
+ 
   background-color: #f2f2f2;
   padding-left: 20px;
+  padding-bottom: 25px;
   border-radius: 0px;
   margin-left: 0px
 }
@@ -478,7 +464,7 @@ padding-top: 3px;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 10px 0px 10px;
+  padding: 10px 30px 0px 0px;
   margin-bottom: 25px;
   margin-top: 25px;
 }
@@ -495,55 +481,50 @@ font-weight: bolder;
   display: flex;
   flex-direction: column;
   
-  justify-content: space-between;
-  margin: 0px 0px 0px 0px;
-  height: 100%;
-  line-height: 20px;
+
+ 
 }
+
+
+
 
 .cartesS3 {
   display: flex;
-  background-color: #ffffff;
-  border-radius: 0px 15px 15px 0px;
   align-items: center;
+
   height: 120px;
-  width: 300px;;
   padding: 4px;
+  margin: 0px;
+  margin-bottom :10px;
+
+  width: 89%;
   border-radius: 15px;
-  box-shadow: 3px 3px 5px  #f2f2f2;
-  margin-bottom: 10px;
+  box-shadow: 3px 3px 10px #cccccc;
 }
 
-.conteneur_img3 {
-  display: flex;
-  max-width: 120px;
-  height: 120px;
-  
-}
 
 .cartesS3 img {
-  width: 100%;
+  width: 40%;
   height: 100%;
   border-radius: 15px 0px 0px 15px;
   object-fit: cover;
 }
 
-.conteneur_text_S3 
-{
+.conteneur_text_S3 {
   display: flex;
-  height: 80%;
+  height: 90%;
   width: 60%;
-  flex-wrap: wrap;
   flex-direction: column;
-  padding-left:20px;
-  padding-right: 30px;
+  padding:0px;
+  padding-left: 10px;
+  padding-right: ;
   justify-content: space-between;
  }
 
 
 .cartesS3:hover {
   cursor: pointer;
-  box-shadow: 3px 3px 5px rgb(158, 158, 158);
+  box-shadow: 5px 5px 10px rgb(192, 192, 192);
   transform: translateY(-5px);
 }
 /*--------- SECTION 4 Activités à Marseille */
@@ -577,7 +558,7 @@ padding: 10px 10px 10px 10px;
 display: flex;
 flex-direction: column;
 width: 100%;
-height: auto%;
+height: auto;
 padding: 10px 10px 10px 10px;
 justify-content: space-between;
 }
@@ -610,7 +591,7 @@ justify-content: space-between;
   height: 170px;
   border-radius: 20px 20px 20px 20px;
   padding: 0px;
-  box-shadow: 3px 3px 10px #808080;
+  box-shadow: 3px 3px 10px #bbbaba;
 }
 
 .carte_grande_image:hover {
@@ -732,58 +713,3 @@ list-style: none;
 line-height: 30px;
 
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
