@@ -517,7 +517,7 @@ font-weight: bolder;
   flex-direction: column;
   padding:0px;
   padding-left: 10px;
-  padding-right: ;
+  padding-right: 20px;
   justify-content: space-between;
  }
 
@@ -681,7 +681,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   background-color: #f2f2f2;
-  width: auto;
+  width:100%;
   height:450px;
 }
 
