@@ -307,10 +307,9 @@ button:active
 {
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(224, 224, 224, 0.808);
-  transform: translateY(-1px);
-  background-color: #f2f2f2;
-}
-
+  transform: translatey(-1px);
+  background-color: #0065fc;
+  color:#ffffff;}
 .boutondetri:active 
 {
   box-shadow: 5px 5px 10px rgba(248, 247, 247, 0.808);
@@ -375,7 +374,8 @@ button:active
 }
 
 #Hébergements {
-  padding : 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
  
 }
 
@@ -401,7 +401,7 @@ button:active
 .conteneur_img {
   display: flex;
   width: auto;
-  height: 90px;
+  height: 80px;
   margin:4px;
   
 }
@@ -463,7 +463,7 @@ justify-content: left;
 .afficherplus {
   font-size: 13px;
   font-weight: 800;
-  padding: 15px 0px 5px 10px;
+  padding: 15px 0px 0px 30px;
 }
 
 /* SECTION 3 Les plus populaires */
@@ -481,7 +481,7 @@ justify-content: left;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 20px 5px 20px;
+  padding: 20px 20px 5px 20px;
   margin-bottom: 0px;
 }
 #populaires {
@@ -508,7 +508,7 @@ justify-content: left;
   align-items: center;
   height: 100px;
   padding: 3px;
-  margin:20px;
+  margin: 10px 20px 20px 20px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px #808080;
 }
@@ -545,26 +545,18 @@ flex-direction: column;
 padding:30px 0px 20px 0px
 }
 
-
 .conteneur_des_colonnes
 {
 display: flex;
-height: 380px;
+height: 300px;
 }
-
-
-
-
-
-
-
 
 .colonne_1
 {
 display: flex;
 flex-direction: column;
 width: 25%;
-padding: 10px 10px 10px 0px;
+padding: 10px 20px 10px 0px;
 }
 
 .colonne_2
@@ -572,7 +564,7 @@ padding: 10px 10px 10px 0px;
 display: flex;
 flex-direction: column;
 width: 25%;
-padding: 10px 10px 10px 10px;
+padding: 10px 20px 10px 10px;
 justify-content: space-between;
 }
 
@@ -581,7 +573,7 @@ justify-content: space-between;
 display: flex;
 flex-direction: column;
 width: 25%;
-padding: 10px 10px 10px 10px;
+padding: 10px 20px 10px 10px;
 }
 
 
@@ -613,9 +605,10 @@ justify-content: space-between;
 {
   display: flex;
   width: 100%;
-  height: 100% ;
+  height: 245px ;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover ;
+  overflow:hidden;
 }
 
 .légende_carte
@@ -623,9 +616,6 @@ justify-content: space-between;
   display:flex;
   padding: 15px;
 }
-
-
-
 
 .carte_moyenne_image
 {
@@ -644,11 +634,11 @@ justify-content: space-between;
 .moyenne_image_de_la_carte
 {
   width: 100%;
-  height: 70% ;
+  height: 105px ;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover ;
+  overflow:hidden;
 }
-
 
 .carte_petite_image
 {
@@ -666,12 +656,22 @@ justify-content: space-between;
 .petite_image_de_la_carte
 {
   width: 100%;
-  height: 70% ;
+  height: 70px;
+  overflow:hidden;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover ;
-}
-/* -----------------Footer-------------- */
 
+}
+
+figcaption {display: flex;
+  font-size: 10px;
+  font-weight:900;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+
+/* -----------------Footer-------------- */
 
 footer 
 {
