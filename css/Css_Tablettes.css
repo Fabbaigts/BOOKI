@@ -56,26 +56,8 @@ table {
 	border-spacing: 0;
 }
 
-
-
-
-
-
-
-
-
 /* --------------------------------*/
 /* ---------Règles générales-------*/
-
-
-#bloc_page{display:flex;
-  min-width: 770px;/* ------taille mini smarthone 4, 5 et 6'-----*/
-  max-width: 991px;
-}
-body 
-{display:flex ;
-}
-
 
 main 
 {
