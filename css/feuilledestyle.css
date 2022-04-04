@@ -68,8 +68,8 @@ table {
 }
 
 body 
-{
-  width: auto;
+{ display:block;
+  width: 100%;
 }
 
 
@@ -498,7 +498,6 @@ justify-content: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
   height: 100%;
   line-height: 20px;
 }
