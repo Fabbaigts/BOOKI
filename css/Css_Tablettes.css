@@ -215,7 +215,7 @@ margin-left: 0px;
 .barre_de_recherche 
 {
   display:flex;
-  align-items: baselcenter;
+  align-items: center;
   border: solid #f2f2f2 1px;
   border-radius: 15px 15px 15px 15px;
   width: 267px;
@@ -461,12 +461,10 @@ button:active
 {
   font-weight: 900;
 }
-
 .euro 
 {
   font-weight: 900;
 }
-
 .étoiles
 {display:flex;
 justify-content: left;
@@ -482,20 +480,16 @@ justify-content: left;
 {
   color: #dfdfdf;
 }
-
 .cartesS2:hover {
   cursor: pointer;
   box-shadow: 5px 5px 10px gray;
   transform: translateY(-5px);
 }
-
 .afficherplus {
   font-size: 16px;
   font-weight: 800;
   padding: 20px 0px 5px 10px;
 }
-
-
 /***************SECTION 3 Les plus populaires***********/
 
 .section3 {
@@ -507,14 +501,12 @@ justify-content: left;
   background-color: #ffffff;
   margin-left: 0px;
 }
-
 .Titrepopulaires {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px 20px 10px;
   margin-bottom: 0px;
-  width: ;
 }
 #populaires {
   margin-bottom: 0px;
