@@ -5,7 +5,6 @@
 
     <meta charset="utf-8" />
     <title>Page d'accueil du site BOOKI</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--xxxxxxxxxxxx Police activée avec le CSS Règles générales html xxxxxxxxxxxxxx-->
 
@@ -17,8 +16,8 @@
     <!--xxxxxxxxxxxx Lien d'attachement à la feuille de style xxxxxxxxxxxxxx-->
 
     <link rel="stylesheet" href="css/feuilledestyle.css"/>
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/Css_pour_smartphone.css"/>
     <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 992px)" href="css/Css_Tablettes.css"/>
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/Css_pour_smartphone.css"/>
     <!--xxxxxxxxxxxx Lien CDN et Fontawesome xxxxxxxxxxxxxx-->
 
     <!--<script src="https://kit.fontawesome.com/b6f0a00902.js" crossorigin="anonymous"></script> -->
@@ -85,14 +84,14 @@
           <div class="barre_de_recherche">
             <i class="fa-solid fa-location-dot"></i>
             <!--icône map awesome-->
-            <form>
+            <form><!--champ de recherche-->
               <input
                 type="search"
                 name="champ_recherche"
                 id="recherche_lieu"
                 placeholder="Marseille, France"
               />
-              <!--champ de recherche-->
+              
             </form>
             <button><span class="recherche">Rechercher</span></button><!--Bouton de recherche-->
             <button id="fa-search"><i class="fas fa-search"></i></button>
@@ -330,6 +329,7 @@
             <div class="Titrepopulaires">
               <h2 id="populaires">Les plus populaires</h2>
               <i class="fa-solid fa-chart-line"></i>
+           
             </div>
 
             <div class="conteneur_cartes_S3">
