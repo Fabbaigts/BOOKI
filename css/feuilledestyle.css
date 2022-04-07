@@ -468,7 +468,7 @@ a#afficher
 .Titrepopulaires {
   display: inline-flex;
   justify-content: space-between;
-  align-items: center;
+
   padding: 30px 20px 10px 20px;
   margin-bottom: 0px;
 }
@@ -702,3 +702,6 @@ footer
   list-style: none;
   line-height: 20px;
   }
+
+
+
