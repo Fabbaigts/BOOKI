@@ -10,9 +10,11 @@
   
 }
 body 
-{
-  display: flex;
-}
+{ 
+  margin: auto;
+  max-width: 375px;
+ }
+
 
 
 main 

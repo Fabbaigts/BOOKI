@@ -66,21 +66,23 @@ margin : 0px 0px 0px 0px;
 }
 
 h1
-{display: flex;
+{
 justify-content: center;
   font-size: 16px;
   font-weight:800;
-  flex-wrap: wrap;
+  
    line-height: 20px;
    padding-bottom: 10px;
+   padding-left: 0px;
 }
 h2 
 {
    
   font-size: 18px;
   font-weight:800;
-  flex-wrap: wrap;
+ 
    line-height: 20px;
+   padding-left: 10px;
 }
 h3 
 {
@@ -100,7 +102,7 @@ h4
 
 p 
 {
-    
+
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
@@ -126,7 +128,7 @@ header
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0px;
-  padding-left: 10px;
+  padding-left: 25px;
 }
 
 
@@ -138,7 +140,6 @@ header
   width: 30%;
  padding-left: 0px;
 }
-
 nav 
 { 
   display: flex;
@@ -151,9 +152,9 @@ nav
 {
   display: flex;
  
- 
+  justify-content:space-around;
   width: 50%;
-
+  padding-left: 0px;
   height: auto;
   
 }
@@ -184,7 +185,7 @@ a:hover
 {
   display: flex;
   justify-items:center;
-  border: 3px solid transparent;
+  border-top: 3px solid transparent;
   border-bottom: 3px solid #f2f2f2;
   justify-content: center;
   width:100%;
@@ -197,17 +198,15 @@ a:hover
 .élément_de_navigation:hover 
 {
   display: flex;
-  border-top: none;
+  border-top: 3px solid transparent;
   border-bottom: 3px solid #0065fc;
  
-
 }
 
 /*-------------Bloc  SECTION 1  recherche---------------*/
 .section_de_recherche
-{display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+{
+
 margin-left: 0px;
 
 }
@@ -221,7 +220,7 @@ margin-left: 0px;
   width: 267px;
   height:45px;
   margin-top:15px;
-   margin-left: 0px;
+   margin-left: 20px;
 }
 
 .fa-location-dot 
@@ -237,10 +236,12 @@ margin-left: 0px;
 input::placeholder
 { display: inline;
   border: none;
-  font-size:medium;
+  font-size:small;
   color: #000000;
-  font-weight: 600;
-  padding-left: 5px;
+  font-size: 13px;
+ font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  padding-left: 10px;
   width: 209px;
 }
 
@@ -285,11 +286,12 @@ button:active
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: center;
+ ;
   align-items:center;
   flex-wrap: wrap;
   margin-top: 30px;
   margin-left: 0px;
+  padding-left: 20px;
 }
 
 .libellé_Filtres
@@ -361,12 +363,12 @@ button:active
 
 .Résultats_de_recherche 
 {
-  display: flex;
+  
   align-items:center;
-  justify-content: center;
+
  width: 100%;
   margin: 0px;
-  padding: 15px 0px 15px 0px ;
+  padding: 15px 0px 15px 20px ;
 }
 
 .fa-info {
@@ -404,14 +406,15 @@ button:active
 #Hébergements {display: flex;
   padding-top : 30px;
   padding-bottom: 20px;
-  padding-left: 10px;
+  padding-left: 20px;
  
 }
 
 .conteneur_des_cartes_S2 {
   display: flex;
-  justify-content:center;
+  justify-items:center;
   align-items: center;
+  
 
   padding-left: 0px;
  }
@@ -485,11 +488,21 @@ justify-content: left;
   box-shadow: 5px 5px 10px gray;
   transform: translateY(-5px);
 }
-.afficherplus {
-  font-size: 16px;
+p.afficherplus {
+  display: flex;
+  font-size:14px;
   font-weight: 800;
-  padding: 20px 0px 5px 10px;
+  padding: 15px 0px 15px 0px;
 }
+a#afficher
+{
+  display:flex;
+  justify-content: flex-start;
+  width: 20%;
+  padding-left: 20px;
+}
+
+
 /***************SECTION 3 Les plus populaires***********/
 
 .section3 {
@@ -517,15 +530,18 @@ justify-content: left;
 {
 display: flex;
 flex-direction: row;
-justify-content:center;
-padding-left: 0px;
+justify-content:space-between;
+padding-left: 15px;
+padding-right: 30px;
+margin-bottom: 20px;
 }
 
 .cartesS3 {
   display: flex;
+ 
   width: 29%;
   height: 100px;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 0px 0px 0px;
   
   
   padding: 3px;

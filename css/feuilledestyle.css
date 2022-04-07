@@ -58,11 +58,10 @@ table {
 }
 
 body 
-{ display:block;
+{ 
   margin: auto;
   max-width: 992px;
- 
-}
+ }
 
 h1,h2 
 {
@@ -440,11 +439,18 @@ justify-content: left;
   transform: translateY(-5px);
 }
 
-.afficherplus {
-  font-size: 13px;
+p.afficherplus {
+  display: flex;
+  font-size:14px;
   font-weight: 800;
-  padding: 15px 0px 15px 30px;
+  padding: 15px 0px 15px 25px;
 }
+a#afficher
+{
+  display:flex;
+  width: 20%;
+}
+
 
 /* SECTION 3 Les plus populaires */
 
