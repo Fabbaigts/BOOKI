@@ -50,17 +50,13 @@ table {
 /* --------------------------------*/
 /* ---------Règles générales-------*/
 
-#bloc_page
-{
-
-  font-family: "Raleway", sans-serif;
-  font-size: 16px ;
-}
 
 body 
 { 
   margin: auto;
   max-width: 992px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px ;
  }
 
 h1,h2 
@@ -185,7 +181,7 @@ color: #0065fc;
   display: inline-flex;
   align-items: center;
   border: solid #e6e6e6 1px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 13px;
   margin-left: 5px;
   font-size: 14px;
 }
@@ -196,9 +192,8 @@ color: #0065fc;
   background-color: rgb(236, 236, 236);
   padding-left: 13px;
   padding-right: 13px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  border-radius: 10px 0 0 10px;
+  padding: 12px 15px 11px 15px;
+  border-radius: 12px 0 0 12px;
 }
 
 input::placeholder
@@ -219,10 +214,10 @@ input#recherche_lieu
 button 
 {
   display: inline-block;
-  height: 36px;
+  height: 37px;
   border-style: none;
   background-color: #0065fc;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 12px 12px 0;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -267,19 +262,20 @@ button:active
 .container_boutons
 {
   display:flex;
+  align-items: center;
   flex-wrap: wrap;
 
 }
 .boutondetri /* cible le bouton dans son intégralité */ 
 {
   display: flex;
+  box-sizing: border-box;
   align-items: center;
-  border: solid #ebe8e8 1px;
-  height: 30px;
-  border-radius: 17.5px;
-  padding-bottom: 3px;
-  padding-top: 2px;
-  padding-right: 10px;
+  border: solid #ebe8e8 2px;
+  height: 40px;
+  border-radius: 20px;
+
+
   margin: 0px 10px 0px 10px;
   
 }
@@ -301,12 +297,12 @@ button:active
 {
   display: flex;
   background-color: #deebff;
-  padding: 10px;
+  padding: 10px 11px 11px 10px;
   color: #0065fc;
-  margin-top: 2px;
-  margin-right: 10px;
-  margin-left: -1px; /* alignement sur le trait de contour */
+  align-items: center;
   border-radius: 50%;
+  margin-right: 10px;
+  margin-left: -2px; /* alignement sur le trait de contour */
 }
 
 .libellébouton 
@@ -461,8 +457,7 @@ a#afficher
   background-color: #f2f2f2;
   border-radius: 15px;
   margin-left: 15px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding:0px 10px 0px 10px;
 }
 
 .Titrepopulaires {
