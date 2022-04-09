@@ -1,21 +1,14 @@
-@media all and (max-width: 767px)
-{
-        
-      
+
+
 /* --------------------------------*/
 /* ---------Règles générales-------*/
 
-#bloc_page{
-  min-width: 350px;/* ------taille mini smarthone 4, 5 et 6'-----*/
-  
-}
 body 
 { 
   margin: auto;
-  max-width: 375px;
- }
-
-
+  width: 375px;/* ------taille iphone 8-----*/
+  
+   }
 
 main 
 {
@@ -433,11 +426,20 @@ padding-top: 3px;
   transform: translateY(-5px);
 }
 
-.afficherplus {
-  font-size: 16px;
+p.afficherplus {
+  display: flex;
+  font-size:14px;
   font-weight: 800;
-  padding: 20px 0px 0px 20px;
+  padding: 15px 0px 15px 20px;
 }
+a#afficher
+{
+  display:flex;
+  justify-content: flex-start;
+  width: 30%;
+  
+}
+
 
 /*********** SECTION 3 Les plus populaires***********/
 
