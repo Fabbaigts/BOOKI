@@ -20,7 +20,7 @@ margin : 0px 0px 0px 0px;
 h1
 {
 
-  font-size: 20px;
+  font-size: 21px;
   font-weight:800;
   flex-wrap: wrap;
    line-height: 20px;
@@ -39,8 +39,8 @@ h3
   display: block;
   color: #000000;
   font-weight: 800;
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 15px;
+  line-height: 16px;
 }
 
 h4
@@ -52,7 +52,7 @@ h4
 
 p 
 {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
   font-weight: 500;
 }
@@ -75,7 +75,7 @@ header
   display : flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 10px
+  margin: 10px 20px 10px 10px
 }
 
 
@@ -149,52 +149,54 @@ a:hover
   border-bottom: 3px solid #0065fc;
  
 }
-
 /*-------------Bloc  SECTION 1  recherche---------------*/
 .section_de_recherche
 {
 margin-left: 10px;
 }
-
 .barre_de_recherche 
 {
   display:flex;
-  justify-content: space-between;
   align-items: center;
   border: solid #f2f2f2 1px;
   border-radius: 15px 15px 15px 15px;
-  width: 300px;
+  width: 320px;
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: 15px;
 }
-
 .fa-location-dot 
 {
-  display: flex;
-  
-  background-color: rgb(236, 236, 236);
-  padding: 16px 18px 15px 18px;
- border-radius: 14px 0 0 14px;
-  
+display: flex;
+background-color: rgb(236, 236, 236);
+padding: 16px 18px 15px 18px;
+border-radius: 14px 0 0 14px;
 }
-
 input::placeholder
-{ display: inline;
-  border: none;
-  font-size:medium;
-  color: #000000;
-  font-weight: 800;
-  padding-left: 5px;
-  width: 209px;
+{ 
+display: flex;
+border: none;
+font-size:medium;
+color: #000000;
+font-weight: 800;
+padding-left: 0px;
+width: 300px;
 }
-
-
+input 
+{
+border: none;
+padding-left: 15px;
+outline: none;
+}
+form
+{ 
+border:none;
+width: 280px;
+}
 button 
 {
   display: none;
 }
-
-
 #fa-search
 {
   display:flex;
@@ -205,23 +207,17 @@ button
   border-radius:15px;
   justify-content: center;
   font-size: 16px;
-
 }
-
-
 button:hover 
 {
   box-shadow: 5px 5px 10px rgba(151, 151, 151, 0.808);
   cursor: pointer;
 }
-
 button:active 
 {
   background: linear-gradient(#0246acec, #0060f0ef, #025adfea, #044099e1);
   padding-top: 2px;
 }
-
-
 /*-------------FILTRES---------------*/
 
 .zonefiltres 
@@ -229,7 +225,6 @@ button:active
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
   margin-top: 20px;
   margin-left: 5px;
 }
@@ -335,7 +330,7 @@ button:active
 }
 
 #Hébergements {
-  padding : 40px 0px 20px 20px;
+  padding : 30px 0px 10px 30px;
  
 }
 
@@ -359,7 +354,7 @@ button:active
   justify-content: flex-start;
     
   background-color: rgb(255, 255, 255);
-  margin: 0px 0px 10px 20px;
+  margin: 10px 10px 10px 10px;
   padding: 0px;
   border-radius: 20px;
   box-shadow: 2px 2px 5px #c5c5c5;
@@ -392,7 +387,7 @@ button:active
 }
 .nuit
 {
-  font-size: 12px;
+  font-size: 13px;
 }
 .valeur 
 {
@@ -413,7 +408,7 @@ padding-top: 3px;
 }
 .fa-star {
  
-  font-size:10px;
+  font-size:11px;
   color: #0065fc;
   
 }
@@ -430,9 +425,9 @@ padding-top: 3px;
 
 p.afficherplus {
   display: flex;
-  font-size:14px;
+  font-size:16px;
   font-weight: 800;
-  padding: 15px 0px 15px 20px;
+  padding: 15px 0px 15px 30px;
 }
 a#afficher
 {
@@ -447,11 +442,14 @@ a#afficher
 
 .section3 {
   display: flex;
+  box-sizing: border-box;
   width:100%;
   flex-direction:column;
+  align-content: center;
+  justify-content: center;
    background-color: #f2f2f2;
   padding-left: 0px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   border-radius: 0px;
   margin-left: 0px;
   padding-right: 0px;
@@ -462,23 +460,34 @@ a#afficher
 .Titrepopulaires {
   display: inline-flex;
   justify-content: space-between;
-  width: 85%;
   align-items: center;
-  padding: 10px 20px 0px 20px;
+  
+  padding: 0px 15px 0px 5px;
   margin-bottom: 25px;
   margin-top: 25px;
 }
 #populaires {
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin:10px 0px 0px 20px;
 }
+
 .fa-chart-line {
 font-size:20px;
+
 font-weight: bolder;
 }
 
 
- 
+ .conteneur_cartes_S3 
+ {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  height: auto;
+
+}
 
 
 
@@ -486,11 +495,10 @@ font-weight: bolder;
   display: flex;
   align-items: center;
 
-  height: 110px;
+  height: 130px;
   padding: 4px;
-  margin: 10px 20px 5px 20px;
-
-  width: 85%;
+  margin-top: 0px;
+  width: 330px;
   border-radius: 15px;
   box-shadow: 2px 2px 5px #d6d6d6;
 }
@@ -506,11 +514,11 @@ font-weight: bolder;
 .conteneur_text_S3 {
   display: flex;
   height: 90%;
-  width: 60%;
+  width: 50%;
   flex-direction: column;
   padding:0px;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
   justify-content: space-between;
  }
 
@@ -526,13 +534,14 @@ font-weight: bolder;
 {
 display: flex;
 justify-content: center;
-padding:30px 10px 30px 10px
+padding:30px 0px 30px 0px
 }
 
 #Activités
 {
   display:flex;
-  padding: 20px 0px 20px 10px;
+  padding: 20px 20px 20px 30px;
+  align-content: flex-start;
 }
 
 .conteneur_des_colonnes
@@ -548,28 +557,28 @@ flex-wrap: wrap;
   order: 1;
 display: flex;
 flex-direction: column;
-min-width: 300px;
+width: 320px;
 height: 50%;
-padding: 10px 10px 10px 10px;
+padding: 10px 5px 10px 5px;
 }
 
 .colonne_2:nth-child(2)
 {order: 3;
 display: flex;
 flex-direction: column;
-width: 300px;
+width:320px;
 height: auto;
-padding: 10px 10px 10px 10px;
-justify-content: space-between;
+padding: 10px 5px 10px 5px;
+
 }
 
 .colonne_3:nth-child(3)
 {order: 2;
 display: flex;
 flex-direction: column;
-width: 300px;
-height: 50%;
-padding: 10px 10px 10px 10px;
+width: 320px;
+height: auto;
+padding: 10px 5px 10px 5px;
 }
 
 
@@ -577,10 +586,10 @@ padding: 10px 10px 10px 10px;
 {order:4;
 display: flex;
 flex-direction: column;
-width:300px;
-height: 100%;
-padding: 10px 0px 10px 10px;
-justify-content: space-between;
+width:320px;
+height: auto;
+padding: 10px 5px 5px 5px;
+
 }
 
 
