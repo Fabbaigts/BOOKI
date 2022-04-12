@@ -160,13 +160,15 @@ margin-left: 10px;
   align-items: center;
   border: solid #f2f2f2 1px;
   border-radius: 15px 15px 15px 15px;
-  width: 320px;
+  width: 330px;
   margin-top: 30px;
   margin-bottom: 30px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 .fa-location-dot 
 {
+  justify-content: flex-start;
+  font-size: medium;
 display: flex;
 background-color: rgb(236, 236, 236);
 padding: 16px 18px 15px 18px;
@@ -249,7 +251,7 @@ button:active
   border: solid #ebe8e8 2px;
   height: 45px;
   border-radius: 22.5px;
-  margin: 10px 10px 0px 10px;
+  margin: 10px 10px 0px 0px;
   
 }
 
@@ -290,7 +292,7 @@ button:active
   display: flex;
   align-items:baseline;
  
-  margin: 10px;
+  margin: 10px 10px 10px 0px;
   padding: 15px 0px 15px 0px ;
 }
 
@@ -462,7 +464,7 @@ a#afficher
   justify-content: space-between;
   align-items: center;
   
-  padding: 0px 15px 0px 5px;
+  padding: 0px 30px 0px 5px;
   margin-bottom: 25px;
   margin-top: 25px;
 }
@@ -498,7 +500,8 @@ font-weight: bolder;
   height: 130px;
   padding: 4px;
   margin-top: 0px;
-  width: 330px;
+  width: 310px;
+  margin-right: 10px;
   border-radius: 15px;
   box-shadow: 2px 2px 5px #d6d6d6;
 }
