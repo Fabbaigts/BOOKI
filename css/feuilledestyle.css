@@ -207,8 +207,14 @@ input::placeholder
   font-size: 13px;
  font-family: "Raleway", sans-serif;
   font-weight: 800;
-  padding-left: 10px;
+  padding-left: 0PX;
   width: 209px;
+}
+input 
+{
+border: none;
+padding-left: 10PX;
+outline: none;
 }
 
 input#recherche_lieu

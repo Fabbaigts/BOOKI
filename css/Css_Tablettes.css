@@ -215,7 +215,7 @@ a:hover
   align-items: center;
   border: solid #f2f2f2 1px;
   border-radius: 15px 15px 15px 15px;
-  width: 29%;
+  width: 280PX;
   height:45px;
   margin-top:15px;
    margin-left: 20px;
@@ -230,6 +230,12 @@ a:hover
  border-radius: 14px 0 0 14px;
   
 }
+input 
+{
+border: none;
+padding-left: 10px;
+outline: none;
+}
 
 input::placeholder
 { display: inline;
@@ -239,7 +245,7 @@ input::placeholder
   font-size: 13px;
  font-family: "Raleway", sans-serif;
   font-weight: 800;
-  padding-left: 10px;
+  
   width: 209px;
 }
 
