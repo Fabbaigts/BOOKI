@@ -225,11 +225,11 @@ a:link {
   width: auto;
   margin: 10px;
   padding: 0px 10px 0px 10px;
+  user-select: NONE;
 }
 
 .élément_de_navigation:hover {
   border-top: 3px solid #0065fc;
-  font-style: #0065fc;
 }
 
 .élément_de_navigation:hover a {
@@ -347,6 +347,8 @@ button:active {
 .boutondetri:active {
   box-shadow: 5px 5px 10px #f2f2f2;
   transform: translateY(-1px);
+  background: linear-gradient(#0065fc61, #0065fc8e, #0065fc93, #0065fc56);
+  padding-top: 2px;
 }
 
 .boutondetri i /* cible les icônes des filtres */ {
@@ -364,6 +366,7 @@ button:active {
   font-size: 13px;
   font-weight: 800;
   padding-right: 10px;
+  user-select: NONE;
 }
 
 .Résultats_de_recherche {

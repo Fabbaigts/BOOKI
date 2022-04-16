@@ -127,15 +127,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 /* --------------------------------*/
 /* ---------Règles générales-------*/
-#bloc_page {
-  justify-content: center;
-  width: 769px;
-  margin: auto;
-  flex-direction: column;
-}
 
 body {
   margin: auto;
