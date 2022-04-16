@@ -347,7 +347,7 @@ button:active {
 .boutondetri:active {
   box-shadow: 5px 5px 10px #f2f2f2;
   transform: translateY(-1px);
-  background: linear-gradient(#0065fc61, #0065fc8e, #0065fc93, #0065fc56);
+  background: linear-gradient(#0065fc70, #0065fc, #0065fc, #0065fc70);
   padding-top: 2px;
 }
 

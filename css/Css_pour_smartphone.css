@@ -129,9 +129,11 @@ table {
 }
 /* --------------------------------*/
 /* ---------Règles générales-------*/
-
 body {
   margin: auto;
+  max-width: 992px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
   /*width: 375px;/* ------taille iphone 8-----*/
   min-width: 340px;
 }
@@ -346,10 +348,11 @@ button:active {
   color: #ffffff;
 }
 .boutondetri:active {
-  box-shadow: 5px 5px 10px rgba(248, 247, 247, 0.808);
+  box-shadow: 5px 5px 10px #f2f2f2;
   transform: translateY(-1px);
+  background: linear-gradient(#0065fc70, #0065fc, #0065fc, #0065fc70);
+  padding-top: 2px;
 }
-
 .boutondetri i /* cible les icônes des filtres */ {
   display: flex;
   background-color: #deebff;
