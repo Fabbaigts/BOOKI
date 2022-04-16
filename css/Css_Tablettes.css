@@ -1,95 +1,164 @@
-
-    #bloc_page
-    {
-      justify-content: center;
-        width: 769px;
-        margin: auto;
-        flex-direction: column;
-        
-    }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* --------------------------------*/
 /* ---------Règles générales-------*/
+#bloc_page {
+  justify-content: center;
+  width: 769px;
+  margin: auto;
+  flex-direction: column;
+}
 
-
-
-body 
-{ 
+body {
   margin: auto;
   max-width: 992px;
   font-family: "Raleway", sans-serif;
-  font-size: 16px ;
- }
-
-h1
-{
-justify-content: center;
   font-size: 16px;
-  font-weight:800;
-  
-   line-height: 20px;
-   padding-bottom: 10px;
-   padding-left: 0px;
 }
-h2 
-{
-   
+
+h1 {
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+}
+h2 {
   font-size: 18px;
-  font-weight:800;
- 
-   line-height: 20px;
-   padding-left: 10px;
+  font-weight: 800;
+  line-height: 20px;
+  padding-left: 10px;
 }
-h3 
-{
+h3 {
   display: flex;
   color: #000000;
   font-weight: 800;
@@ -97,245 +166,198 @@ h3
   line-height: 15px;
 }
 
-h4
-{ 
+h4 {
   padding-bottom: 10px;
   font-size: 16px;
   font-weight: 700;
 }
 
-p 
-{
-
+p {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
 }
 
-
 /* ------------------------------------------------------*/
 /* ----------Règles applicables au HEADER ---------------*/
 /* ------------------------------------------------------*/
-header 
-{
+header {
   display: flex;
 
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   height: 150px;
   width: auto;
 }
 
-.Titre_principale_slogan
-{ 
-  display : flex;
+.Titre_principale_slogan {
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0px;
   padding-left: 25px;
 }
 
-
-
-
-#bloclogo{display: flex;
-  
+#bloclogo {
+  display: flex;
   margin-top: 20px;
   width: 30%;
- padding-left: 0px;
+  padding-left: 0px;
 }
-nav 
-{ 
+nav {
   display: flex;
   width: 100%;
-
-  
 }
 
-.liste_de_navigation
-{
+.liste_de_navigation {
   display: flex;
- 
-  justify-content:space-around;
+  justify-content: space-around;
   width: 50%;
   padding-left: 0px;
   height: auto;
-  
 }
 
-a 
-{
-align-items: center;
-flex-direction: row;
-text-decoration: none;
-color: black;
+a {
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
 }
 
-a:link 
-{ display: flex;
+a:link {
+  display: flex;
   justify-content: center;
   text-decoration: none;
-  font-size: 15px ;
+  font-size: 15px;
   font-weight: 500;
 }
 
-a:hover 
-{
+a:hover {
   color: #0065fc;
-
 }
 
-.élément_de_navigation 
-{
+.élément_de_navigation {
   display: flex;
-  justify-items:center;
+  justify-items: center;
   border-top: 3px solid transparent;
   border-bottom: 3px solid #f2f2f2;
   justify-content: center;
-  width:100%;
+  width: 100%;
   margin: 0px;
-  padding : 0px 0px 10px 0px
+  padding: 0px 0px 10px 0px;
 }
 
-
-
-.élément_de_navigation:hover 
-{
+.élément_de_navigation:hover {
   display: flex;
   border-top: 3px solid transparent;
   border-bottom: 3px solid #0065fc;
- 
 }
 
 /*-------------Bloc  SECTION 1  recherche---------------*/
 
-.barre_de_recherche 
-{
-  display:flex;
+.barre_de_recherche {
+  display: flex;
   align-items: center;
   border: solid #f2f2f2 1px;
   border-radius: 15px 15px 15px 15px;
-  width: 280PX;
-  height:45px;
-  margin-top:15px;
-   margin-left: 20px;
+  width: 280px;
+  height: 45px;
+  margin-top: 15px;
+  margin-left: 20px;
 }
 
-.fa-location-dot 
-{
+.fa-location-dot {
   display: flex;
-  
   background-color: #f2f2f2;
   padding: 16px 18px 16px 18px;
- border-radius: 14px 0 0 14px;
-  
+  border-radius: 14px 0 0 14px;
 }
-input 
-{
-border: none;
-padding-left: 10px;
-outline: none;
+input {
+  border: none;
+  padding-left: 10px;
+  outline: none;
 }
 
-input::placeholder
-{ display: inline;
+input::placeholder {
+  display: inline;
   border: none;
-  font-size:small;
+  font-size: small;
   color: #000000;
   font-size: 13px;
- font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
-  
   width: 209px;
 }
 
-
-button 
-{
+button {
   display: none;
 }
 
-
-#fa-search
-{
-  display:flex;
-  color:white;
+#fa-search {
+  display: flex;
+  color: white;
   width: 46px;
   height: 46px;
   align-items: center;
-  border-radius:15px;
+  border-radius: 15px;
   justify-content: center;
   font-size: 16px;
   margin-left: 7px;
-
 }
 
-
-button:hover 
-{
+button:hover {
   box-shadow: 5px 5px 10px #f2f2f2;
   cursor: pointer;
 }
 
-button:active 
-{
+button:active {
   background: linear-gradient(#0065fc61, #0065fc8e, #0065fc93, #0065fc56);
   padding-top: 2px;
 }
 
-
 /*-------------FILTRES---------------*/
 
-.zonefiltres 
-{
+.zonefiltres {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 20px;
   margin-left: 20px;
 }
-.libellé_Filtres
-{display: flex;
+.libellé_Filtres {
+  display: flex;
   font-size: 13px;
   font-weight: 800;
   padding-left: 5px;
 }
-.container_boutons
-{
-  display:flex;
+.container_boutons {
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
-
 }
-.boutondetri /* cible le bouton dans son intégralité */ 
-{
+.boutondetri /* cible le bouton dans son intégralité */ {
   display: flex;
   box-sizing: border-box;
   align-items: center;
   border: solid #f2f2f2 2px;
   height: 40px;
   border-radius: 20px;
-
-
   margin: 0px 10px 0px 10px;
-  
 }
 
-.boutondetri:hover /* cible le bouton dans son intégralité */ 
-{
+.boutondetri:hover /* cible le bouton dans son intégralité */ {
   cursor: pointer;
   box-shadow: 5px 5px 10px #dfdfdf;
   transform: translatey(-1px);
   background-color: #0065fc;
-  color:#ffffff;}
-.boutondetri:active 
-{
+  color: #ffffff;
+}
+.boutondetri:active {
   box-shadow: 5px 5px 10px #f2f2f2;
   transform: translateY(-1px);
 }
 
-.boutondetri i /* cible les icônes des filtres */ 
-{
+.boutondetri i /* cible les icônes des filtres */ {
   display: flex;
   background-color: #deebff;
   padding: 11px 11px 11px 11px;
@@ -345,29 +367,27 @@ button:active
   margin-right: 10px;
   margin-left: -2px; /* alignement sur le trait de contour */
 }
-.libellébouton 
-{
+.libellébouton {
   font-size: 13px;
   font-weight: 800;
   padding-right: 10px;
 }
 
+.Résultats_de_recherche {
+  box-sizing: border-box;
 
-.Résultats_de_recherche 
-{box-sizing: border-box;
-  
-  align-items:center;
+  align-items: center;
 
- width: 100%;
+  width: 100%;
   margin: 0px;
-  padding: 15px 0px 15px 20px ;
+  padding: 15px 0px 15px 20px;
 }
 
 .fa-info {
-  font-size: 12px ;
+  font-size: 12px;
   color: #0065fc;
-  font-weight:bolder;
-   background-color: #ffffff;
+  font-weight: bolder;
+  background-color: #ffffff;
   padding: 2px 6px 2px 6px;
   margin-right: 10px;
   border: solid 2px #f2f2f2;
@@ -384,21 +404,20 @@ button:active
 /* SECTION 2 Hébergements à marseille */
 .section2 {
   display: flex;
-  width:100%;
+  width: 100%;
   flex-direction: column;
   background-color: #f2f2f2;
-  padding: 30px 0px 10px 0px  ;
+  padding: 30px 0px 10px 0px;
   border-radius: 0px;
   margin-right: 0px;
 }
 
-#Hébergements {display: flex;
-  padding-top : 30px;
+#Hébergements {
+  display: flex;
+  padding-top: 30px;
   padding-bottom: 20px;
   padding-left: 20px;
- 
 }
-
 
 .conteneur_des_cartes_S2 {
   display: flex;
@@ -407,14 +426,14 @@ button:active
   align-items: center;
   flex-wrap: wrap;
   padding-left: 20px;
- }
+}
 .cartesS2 {
   display: flex;
-  width: 30% ;
-  height:auto;
+  width: 30%;
+  height: auto;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
-   margin: 10px 20px 10px 0px;
+  margin: 10px 20px 10px 0px;
   justify-content: center;
   border-radius: 20px;
   box-shadow: 3px 3px 10px #dedede;
@@ -423,16 +442,15 @@ button:active
 .conteneur_img {
   display: flex;
   width: auto;
-  height: 80px ;
-  margin:4px;
-  
+  height: 80px;
+  margin: 4px;
 }
 .image_de_la_carte {
   width: 100%;
   height: 100%;
   border-radius: 15px 15px 0 0;
   object-fit: cover;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .conteneur_text_s2 {
@@ -444,32 +462,25 @@ button:active
   padding-bottom: 10px;
   padding-top: 5px;
 }
-.nuit
-{
+.nuit {
   font-size: 10px;
   line-height: 25px;
 }
-.valeur 
-{
+.valeur {
   font-weight: 900;
 }
-.euro 
-{
+.euro {
   font-weight: 900;
 }
-.étoiles
-{display:flex;
-justify-content: left;
-   
+.étoiles {
+  display: flex;
+  justify-content: left;
 }
 .fa-star {
- 
-  font-size:10px;
+  font-size: 10px;
   color: #0065fc;
-  
 }
-.fa-star.gris 
-{
+.fa-star.gris {
   color: #dfdfdf;
 }
 .cartesS2:hover {
@@ -477,20 +488,23 @@ justify-content: left;
   box-shadow: 5px 5px 10px #c5c5c5;
   transform: translateY(-5px);
 }
+.cartesS2:active {
+  cursor: pointer;
+  box-shadow: 2px 5px 3px #c5c5c5;
+  transform: translateY(-2px);
+}
 p.afficherplus {
   display: flex;
-  font-size:14px;
+  font-size: 14px;
   font-weight: 800;
   padding: 15px 0px 15px 0px;
 }
-a#afficher
-{
-  display:flex;
+a#afficher {
+  display: flex;
   justify-content: flex-start;
   width: 50%;
   padding-left: 20px;
 }
-
 
 /***************SECTION 3 Les plus populaires***********/
 
@@ -501,9 +515,10 @@ a#afficher
   flex-direction: column;
   background-color: #ffffff;
   margin-left: 0px;
-  padding:0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
-.Titrepopulaires {box-sizing: border-box;
+.Titrepopulaires {
+  box-sizing: border-box;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -512,35 +527,28 @@ a#afficher
 }
 #populaires {
   margin-bottom: 0px;
-
 }
 
-
-.conteneur_cartes_S3 
-{box-sizing: border-box;
-display: flex;
-flex-direction: row;
-width: 100%;
-margin-bottom: 40px;
-padding-left: 20px;
-
+.conteneur_cartes_S3 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-left: 20px;
 }
 
 .cartesS3 {
   box-sizing: border-box;
   display: flex;
- 
+
   width: 30%;
   height: 120px;
   margin: 10px 20px 10px 0px;
-  
-  
   padding: 3px;
   border-radius: 20px;
   box-shadow: 3px 3px 10px #dedede;
 }
-
-
 
 .cartesS3 img {
   width: 100px;
@@ -554,69 +562,63 @@ padding-left: 20px;
   height: 90%;
   width: 50%;
   flex-direction: column;
- 
   justify-content: space-between;
- }
-
+}
 
 .cartesS3:hover {
   cursor: pointer;
   box-shadow: 5px 5px 10px #c5c5c5;
   transform: translateY(-5px);
 }
+.cartesS3:active {
+  cursor: pointer;
+  box-shadow: 2px 5px 3px #c5c5c5;
+  transform: translateY(-2px);
+}
 /*--------- SECTION 4 Activités à Marseille */
 
-.section4 
-{
-display: flex;
-flex-direction: column;
-padding:30px 20px 20px 20px
+.section4 {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 20px 20px;
 }
 
-.conteneur_des_colonnes
-{
-display: flex;
-height: 300px;
+.conteneur_des_colonnes {
+  display: flex;
+  height: 300px;
 }
 
-.colonne_1
-{
-display: flex;
-flex-direction: column;
-width: 25%;
-padding: 10px 20px 10px 0px;
+.colonne_1 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 10px 20px 10px 0px;
 }
 
-.colonne_2
-{
-display: flex;
-flex-direction: column;
-width: 25%;
-padding: 10px 20px 10px 10px;
-justify-content: space-between;
+.colonne_2 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 10px 20px 10px 10px;
+  justify-content: space-between;
 }
 
-.colonne_3
-{
-display: flex;
-flex-direction: column;
-width: 25%;
-padding: 10px 20px 10px 10px;
+.colonne_3 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 10px 20px 10px 10px;
 }
 
-
-.colonne_4
-{
-display: flex;
-flex-direction: column;
-width: 25%;
-padding: 10px 0px 10px 10px;
-justify-content: space-between;
+.colonne_4 {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  padding: 10px 0px 10px 10px;
+  justify-content: space-between;
 }
 
-
-.carte_grande_image
-{
+.carte_grande_image {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -629,25 +631,29 @@ justify-content: space-between;
   box-shadow: 5px 5px 10px #c5c5c5;
   transform: translateY(-5px);
 }
-.grande_image
-{
+.carte_grande_image:active {
+  cursor: pointer;
+  box-shadow: 2px 5px 3px #c5c5c5;
+  transform: translateY(-2px);
+}
+.grande_image {
   display: flex;
   width: 100%;
-  height: 245px ;
+  height: 245px;
   border-radius: 15px 15px 0px 0px;
-  object-fit: cover ;
-  overflow:hidden;
+  object-fit: cover;
+  overflow: hidden;
 }
 
-figcaption {display: flex;
+figcaption {
+  display: flex;
   font-size: 12px;
-  font-weight:800;
+  font-weight: 800;
   padding-top: 10px;
   padding-left: 10px;
 }
 
-.carte_moyenne_image
-{
+.carte_moyenne_image {
   display: flex;
   flex-direction: column;
   height: 50%;
@@ -660,21 +666,24 @@ figcaption {display: flex;
   box-shadow: 5px 5px 10px #c5c5c5;
   transform: translateY(-5px);
 }
-.moyenne_image_de_la_carte
-{
+.carte_moyenne_image:active {
+  cursor: pointer;
+  box-shadow: 2px 5px 3px #c5c5c5;
+  transform: translateY(-2px);
+}
+.moyenne_image_de_la_carte {
   width: 100%;
-  height: 105px ;
+  height: 105px;
   border-radius: 15px 15px 0px 0px;
-  object-fit: cover ;
-  overflow:hidden;
+  object-fit: cover;
+  overflow: hidden;
 }
 
-.carte_petite_image
-{
+.carte_petite_image {
   display: flex;
   flex-direction: column;
   height: 37%;
-  border-radius: 15px ;
+  border-radius: 15px;
   box-shadow: 3px 3px 10px #dedede;
 }
 .carte_petite_image:hover {
@@ -682,56 +691,45 @@ figcaption {display: flex;
   box-shadow: 5px 5px 10px #c5c5c5;
   transform: translateY(-5px);
 }
-.petite_image_de_la_carte
-{
+.carte_petite_image:active {
+  cursor: pointer;
+  box-shadow: 2px 5px 3px #c5c5c5;
+  transform: translateY(-2px);
+}
+.petite_image_de_la_carte {
   width: 100%;
   height: 70px;
-  overflow:hidden;
+  overflow: hidden;
   border-radius: 15px 15px 0px 0px;
-  object-fit: cover ;
-
+  object-fit: cover;
 }
-
-
 
 /* -----------------Footer-------------- */
 
-
-footer 
-{
+footer {
   display: flex;
   height: 150px;
   width: 100%;
   justify-content: space-between;
-  
-
   background-color: #f2f2f2;
 }
 
-.conteneur_blocs_footer 
-{
+.conteneur_blocs_footer {
   display: flex;
-
-
   padding-left: 30px;
 }
 
-.bloc_footer 
-{
+.bloc_footer {
   display: flex;
   flex-direction: column;
   margin: 0px 65px 0px 0px;
   height: 100%;
- 
 }
 
-
-.elements_bloc_footer 
-{
+.elements_bloc_footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
   line-height: 20px;
- 
- }
+}
